@@ -6,7 +6,8 @@ class SetLanguage {
         "languages": {
             "en": {
                 "strings": {
-                    "main-title": "coffee in the morning"
+                    "home-title": "coffee in the morning",
+                    "home-subtitle": "A film by Rogelio Rodriguez"
                 }
             }
         }

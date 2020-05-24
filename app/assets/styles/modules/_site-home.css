@@ -1,0 +1,51 @@
+.site-home {
+    height: 100vh;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('/assets/images/back-main.jpg') top center no-repeat;
+        background-size: cover;
+        filter: saturate(0.9) contrast(.7) brightness(.7) grayscale(20%);
+    }
+    &__title {
+        width: 100%;
+        text-align: center;
+        font-family: $font-title, serif;
+        font-size: 3.5rem;
+        color: $color-white;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+        @mixin center 45%;
+    }
+    &__subtitle {
+        font-family: $font-subtitle, serif;
+        font-size: 2.5rem;
+        color: $color-white;
+        @mixin center 65%;
+    }
+    &__arrow-btn {
+        @mixin center 92%,
+        50%;
+        margin: 0;
+        padding: 0;
+    }
+    &__credits {
+        position: fixed;
+        width: 35%;
+        bottom: .5rem;
+        left: 2rem;
+        color: $color-white;
+        font-family: $font-copy, serif;
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+    &__logo {
+        position: fixed;
+        width: 3rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
