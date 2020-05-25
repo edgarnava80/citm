@@ -14,36 +14,70 @@
         width: 100%;
         text-align: center;
         font-family: $font-title, serif;
-        font-size: 3.5rem;
+        font-size: 1.5rem;
         color: $color-white;
         text-transform: capitalize;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         @mixin center 45%;
+        @mixin atSmall {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        @mixin atMedium {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+        }
     }
     &__subtitle {
         font-family: $font-subtitle, serif;
-        font-size: 2.5rem;
+        font-size: 1rem;
         color: $color-white;
-        @mixin center 65%;
+        @mixin center 60%;
+        @mixin atSmall {
+            font-size: 1.5rem;
+            @mixin center 65%;
+        }
+        @mixin atMedium {
+            font-size: 2.5rem;
+            @mixin center 65%;
+        }
     }
     &__arrow-btn {
-        @mixin center 95%,
-        50%;
+        @mixin arrow-btn-down;
     }
     &__credits {
-        position: fixed;
-        width: 35%;
-        bottom: .5rem;
-        left: 2rem;
+        position: absolute;
+        width: 75%;
+        bottom: .2rem;
+        left: 0;
         color: $color-white;
         font-family: $font-copy, serif;
         font-size: .8rem;
         text-transform: uppercase;
+        transform: scale(.7) translateX(-5rem);
+        @mixin atSmall {
+            bottom: .3rem;
+            left: 1rem;
+            width: 45%;
+            transform: scale(.8);
+        }
+        @mixin atMedium {
+            bottom: .5rem;
+            left: 2rem;
+            width: 35%;
+            transform: scale(1);
+        }
     }
     &__logo {
         position: fixed;
-        width: 3rem;
+        width: 1.8rem;
         bottom: 1rem;
         right: 1rem;
+        @mixin atSmall {
+            width: 2.4rem;
+        }
+        @mixin atMedium {
+            width: 3rem;
+        }
     }
 }

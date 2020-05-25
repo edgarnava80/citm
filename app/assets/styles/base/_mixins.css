@@ -67,16 +67,62 @@ $varRotation: 45deg {
     }
 }
 
-@define-mixin button-navigation $varColor: 0 {
+@define-mixin arrow-btn-up {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    transform: scale(0.6) translateX(-50%);
+    @mixin atSmall {
+        top: 1%;
+        left: 50%;
+        transform: scale(.7) translateX(-50%);
+    }
+    @mixin atMedium {
+        top: 1%;
+        left: 50%;
+        transform: scale(.8) translateX(-50%);
+    }
+    @mixin atLarge {
+        top: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@define-mixin arrow-btn-down {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 50%;
+    transform: scale(0.6) translateX(-50%);
+    @mixin atSmall {
+        bottom: 1%;
+        left: 50%;
+        transform: scale(.7) translateX(-50%);
+    }
+    @mixin atMedium {
+        bottom: 1%;
+        left: 50%;
+        transform: scale(.8) translateX(-50%);
+    }
+    @mixin atLarge {
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@define-mixin button-navigation {
     &__checkbox {
         display: none;
     }
     &__button {
-        height: 5rem;
-        width: 5rem;
-        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        position: fixed;
         z-index: 200;
-        top: 1rem;
+        top: 0;
         left: 1rem;
         text-align: center;
         cursor: pointer;
@@ -122,7 +168,6 @@ $varRotation: 45deg {
         &:link,
         &:visited {
             display: inline-block;
-            font-size: 2rem;
             font-weight: 400;
             padding: 1rem 2rem;
             color: $color-white;
@@ -131,6 +176,10 @@ $varRotation: 45deg {
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
             background-size: 230%;
             transition: all .4s;
+            font-size: 3rem;
+            @mixin atSmall {
+                font-size: 2rem;
+            }
         }
         &:hover,
         &:active {
@@ -142,12 +191,24 @@ $varRotation: 45deg {
     /*  FUNCTIONALITY */
     &__checkbox:checked~&__background {
         /*transform: scale(20, 100);  */
-        width: 25%;
-        /*height: 100%;*/
+        width: 100%;
+        @mixin atSmall {
+            width: 30%;
+        }
+        @mixin atMedium {
+            width: 25%;
+        }
     }
     &__checkbox:checked~&__nav {
         opacity: 1;
-        width: 25%;
+        text-align: center;
+        width: 100%;
+        @mixin atSmall {
+            width: 30%;
+        }
+        @mixin atMedium {
+            width: 25%;
+        }
     }
     /*  ICON  */
     &__icon {
@@ -169,6 +230,7 @@ $varRotation: 45deg {
             background-color: $color-grey-dark;
             display: inline-block;
         }
+        &,
         &::before,
         &::after {
             content: "";
