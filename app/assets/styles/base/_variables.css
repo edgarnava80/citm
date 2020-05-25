@@ -3,7 +3,7 @@
 $color-white: #fff;
 $color-black: #000;
 $color-grey: #737373;
-$color-grey-light: #717C78;
+$color-grey-light: rgb(166, 177, 173);
 $color-grey-dark: #4B5350;
 
 /* BACKGROUND IMAGE */

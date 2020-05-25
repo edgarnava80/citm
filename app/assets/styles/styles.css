@@ -2,5 +2,9 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
-@import "modules/_site-home";
+@import "modules/_animations";
 @import "modules/_buttons";
+@import "modules/_wrapper";
+@import "modules/_navigation";
+@import "modules/_site-home";
+@import "modules/_site-main";

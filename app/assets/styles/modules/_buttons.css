@@ -1,35 +1,19 @@
 .buttons {
-    &__arrow-down {
-        ul li {
-            list-style: none;
-            width: 80px;
-            height: 80px;
-            /*background: rgba(255, 255, 255, .2);*/
-            border-radius: 50%;
-            transition: .5s;
-        }
-        ul li:hover {
-            background: rgba(255, 255, 255, .2);
-        }
-        ul li span {
-            position: absolute;
-            width: 4.5rem;
-            height: 4.5rem;
-            border: 3px solid rgba(255, 255, 255, .5);
-            transition: .2s;
-            top: 25%;
-            right: 21%;
-            transform: translateY(0) rotate(45deg);
-            border-left: none;
-            border-top: none;
-        }
-        ul li span:before {
-            content: '';
-            position: absolute;
-            width: 6rem;
-            height: 3px;
-            background: rgba(255, 255, 255, .5);
-            transform: rotate(45deg) translate(.7rem, 2rem);
-        }
+    &__arrow-down-w {
+        /*Parameters: color, direction. 
+    w=255 b=0, down=45deg up=-135deg*/
+        @mixin arrow-button;
+    }
+    &__arrow-down-b {
+        @mixin arrow-button 0,
+        45deg;
+    }
+    &__arrow-up-w {
+        @mixin arrow-button 255,
+        -135deg;
+    }
+    &__arrow-up-b {
+        @mixin arrow-button 0,
+        -135deg;
     }
 }

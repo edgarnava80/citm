@@ -27,10 +27,8 @@
         @mixin center 65%;
     }
     &__arrow-btn {
-        @mixin center 92%,
+        @mixin center 95%,
         50%;
-        margin: 0;
-        padding: 0;
     }
     &__credits {
         position: fixed;
