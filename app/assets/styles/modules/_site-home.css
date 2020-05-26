@@ -69,6 +69,7 @@
         }
     }
     &__logo {
+        z-index: 10;
         position: fixed;
         width: 1.8rem;
         bottom: 1rem;
