@@ -227,7 +227,7 @@ $varRotation: 45deg {
         &::before,
         &::after {
             height: 2px;
-            background-color: $color-grey-dark;
+            background-color: $color-grey-light;
             display: inline-block;
         }
         &,
@@ -245,11 +245,13 @@ $varRotation: 45deg {
             top: .7rem;
         }
     }
-    &__button:hover &__icon::before {
-        top: -.9rem;
-    }
-    &__button:hover &__icon::after {
-        top: .9rem;
+    @mixin atSmall {
+        &__button:hover &__icon::before {
+            top: -.9rem;
+        }
+        &__button:hover &__icon::after {
+            top: .9rem;
+        }
     }
     &__checkbox:checked+&__button &__icon {
         background-color: transparent;
