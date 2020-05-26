@@ -27,7 +27,7 @@
         }
     }
     &__scene-1 {
-        background: url('./assets/images/scene-1.jpeg') center no-repeat;
+        background: url('./assets/images/scene1-main.jpg') center no-repeat;
         background-size: contain;
     }
     &__arrow-btn-down {
@@ -39,7 +39,7 @@
         position: relative;
     }
     &__scene-2 {
-        background: url('./assets/images/scene-2.jpeg') center no-repeat;
+        background: url('./assets/images/scene2-main.jpg') center no-repeat;
         background-size: contain;
     }
 }
