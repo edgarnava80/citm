@@ -131,6 +131,7 @@ $varRotation: 45deg {
         animation: dispBut 2s ease-out 1s forwards;
     }
     &__background {
+        visibility: hidden;
         height: 100%;
         width: 0;
         /*border-radius: 10%; */
@@ -191,6 +192,7 @@ $varRotation: 45deg {
     /*  FUNCTIONALITY */
     &__checkbox:checked~&__background {
         /*transform: scale(20, 100);  */
+        visibility: visible;
         width: 100%;
         @mixin atSmall {
             width: 30%;
