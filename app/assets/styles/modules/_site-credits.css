@@ -1,0 +1,107 @@
+.site-credits {
+    &__director {
+        height: 100vh;
+        position: relative;
+        &__photo {
+            position: absolute;
+            background: url('./assets/images/director-main.jpg') center no-repeat;
+            background-size: cover;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            @mixin atSmall {
+                top: 50%;
+                width: 45%;
+                height: 60%;
+                transform: translateY(-50%);
+            }
+        }
+        &__story {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            padding: 2rem;
+            @mixin atSmall {
+                top: 50%;
+                left: unset;
+                right: 0;
+                width: 55%;
+                height: 80%;
+                transform: translateY(-50%);
+                padding: 7rem;
+            }
+        }
+        &__title {
+            text-align: center;
+            font-family: $font-title, serif;
+            text-transform: uppercase;
+            font-size: 3rem;
+            padding-bottom: 1rem;
+            @mixin atSmall {
+                font-size: 3.5rem;
+                padding-bottom: 1.5rem;
+            }
+            @mixin atMedium {
+                font-size: 4rem;
+                padding-bottom: 2rem;
+            }
+            @mixin atLarge {
+                font-size: 5rem;
+                padding-bottom: 2rem;
+            }
+        }
+        &__subtitle {
+            text-align: center;
+            font-family: $font-main, serif;
+            font-size: 2rem;
+            padding-bottom: 1rem;
+            @mixin atSmall {
+                font-size: 2.5rem;
+                padding-bottom: 1.5rem;
+            }
+            @mixin atMedium {
+                font-size: 2.5rem;
+                padding-bottom: 2rem;
+            }
+            @mixin atLarge {
+                font-size: 3.5rem;
+                padding-bottom: 2rem;
+            }
+        }
+        &__text {
+            text-align: justify;
+            font-size: 1.5rem;
+            @mixin atSmall {
+                font-size: 2rem;
+            }
+            @mixin atLarge {
+                font-size: 2rem;
+                line-height: 1.4;
+            }
+        }
+    }
+    &__credits {
+        height: 100vh;
+        position: relative;
+        background-color: black;
+        &__image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('./assets/images/creditsEng-main.png') center no-repeat;
+            background-size: contain;
+            @mixin atSmall {
+                position: absolute;
+                width: 95%;
+                height: 95%;
+                @mixin center;
+            }
+        }
+    }
+}
