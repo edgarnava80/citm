@@ -74,7 +74,7 @@
             z-index: 0;
             opacity: 1;
             transform-origin: 100% 0%;
-            animation: loader3 10s ease-in-out infinite;
+            animation: loader3 5s ease-in-out infinite;
         }
         
         @keyframes loader3 {
@@ -242,6 +242,9 @@
         </div>
     </main>
     <div class="site-cast">
+        <video autoplay muted loop class="site-cast__video">
+                <source src="./assets/images/cast-main.mp4" type="video/mp4">
+        </video>
         <div class="site-cast--melanie">
             <div class="site-cast--melanie__photo">
                 &nbsp;
@@ -298,6 +301,28 @@
             <div class="site-credits__credits__image">
                 &nbsp;
             </div>
+        </div>
+    </div>
+    <div class="site-gallery">
+        <video autoplay muted loop class="site-gallery__video">
+            <source src="./assets/images/gallery-main.mp4" type="video/mp4">
+        </video>
+        <div class="site-gallery__p1">
+            <picture>
+                <!--<source sizes="404px" data-srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">-->
+                <!--<source sizes="320px" data-srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w" media="(min-width: 800px)">-->
+                <img class="site-gallery__p1--img1" old-class="lazyload" src="assets/images/gallery/gallery1.jpg" data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Gallery image.">
+            </picture>
+        </div>
+        <div class="site-gallery__p2">
+            <picture>
+                <img class="site-gallery__p2--img5" old-class="lazyload" src="assets/images/gallery/gallery5.jpg" data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Gallery image.">
+            </picture>
+        </div>
+        <div class="site-gallery__p3">
+            <picture>
+                <img class="site-gallery__p3--img6" old-class="lazyload" src="assets/images/gallery/gallery6.jpg" data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Gallery image.">
+            </picture>
         </div>
     </div>
 </body>

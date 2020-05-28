@@ -1,0 +1,64 @@
+.site-gallery {
+    position: relative;
+    &__video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    &__p1 {
+        height: 100vh;
+        position: relative;
+        &--img1 {
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            @mixin atSmall {
+                width: 70%;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__p2 {
+        height: 100vh;
+        position: relative;
+        &--img5 {
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            @mixin atSmall {
+                width: 70%;
+                top: 50%;
+                left: 15%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__p3 {
+        height: 100vh;
+        position: relative;
+        &--img6 {
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            @mixin atSmall {
+                width: 70%;
+                top: 50%;
+                left: 30%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
