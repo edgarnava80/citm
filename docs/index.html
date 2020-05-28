@@ -1,4 +1,88 @@
 <!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Merriweather:wght@300;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display+SC:wght@400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><title>Coffee in the morning</title><meta name="keywords" content="film, movie, narrative short, coffee in the morning, café por la mañana"><meta name="description" content="A young woman stays in a Doctor’s cabin in the middle of the woods,
     recovering from her wounds. With extra help from someone unexpected,
     she starts getting ready to finally go back to her hometown. This might
-    not be yet as safe and easy as she might think."><link href="styles.0dd8181d43192f65aa4d.css" rel="stylesheet"></head><body><header class="site-home"><div class="site-home__title"><h1 data-key="home-tilte">coffee in the morning</h1></div><div class="site-home__subtitle"><h3 data-key="home-subtilte">A film by <strong>Rogelio Rodriguez</strong></h3></div><div class="site-home__arrow-btn buttons__arrow-down-w"><ul><li><span></span></li></ul></div><div class="site-home__logo"><img src="./assets/images/logo.png" alt="Rojo y Tostado Productions logo."></div><div class="site-home__credits"><p>&copy; 2020 Rojo y Tostado Productions | by: Edgar Nava</p></div></header><main class="site-main"><div class="site-main__white"><div class="navigation"><input type="checkbox" class="navigation__checkbox" id="navi-toggle"> <label for="navi-toggle" class="navigation__button"><span class="navigation__icon"></span></label><div class="navigation__background">&nbsp;</div><nav class="navigation__nav"><ul class="navigation__list"><li class="navigation__item"><a href="#" class="navigation__link">Home</a></li><li class="navigation__item"><a href="#" class="navigation__link">Film</a></li><li class="navigation__item"><a href="#" class="navigation__link">Cast</a></li><li class="navigation__item"><a href="#" class="navigation__link">Director</a></li><li class="navigation__item"><a href="#" class="navigation__link">Credits</a></li><li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li></ul></nav></div><div class="site-main__arrow-btn-up buttons__arrow-up-b"><ul><li><span></span></li></ul></div><div class="wrapper"><div class="site-main__title"><h1 class="site-main__title__text">Dreams and new beginnings...</h1></div><div class="site-main__scene-1"></div></div><div class="site-main__arrow-btn-down buttons__arrow-down-b"><ul><li><span></span></li></ul></div></div><div class="site-main__black"><div class="site-main__arrow-btn-up buttons__arrow-up-w"><ul><li><span></span></li></ul></div><div class="wrapper"><div class="site-main__scene-2"></div><div class="site-main__title"><h1 class="site-main__title__text">... and yet, a distant future.</h1></div></div><div class="site-main__arrow-btn-down buttons__arrow-down-w"><ul><li><span></span></li></ul></div></div></main><script src="main.0dd8181d43192f65aa4d.js"></script></body></html>
+    not be yet as safe and easy as she might think."><style>.loader-wrapper {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 1);
+            z-index: 500;
+            &--hide {
+                display: none;
+            }
+        }
+        
+        .box {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .2s ease;
+        }
+        
+        .loader3 {
+            position: relative;
+            width: 150px;
+            height: 20px;
+            top: 45%;
+            top: calc(50% - 10px);
+            left: 25%;
+            left: calc(50% - 75px);
+        }
+        
+        .loader3:after {
+            content: "LOADING ...";
+            color: #fff;
+            font-weight: 200;
+            font-size: 16px;
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            line-height: 20px;
+            left: 0;
+            top: 0;
+            background-color: #e74c3c;
+            z-index: 1;
+        }
+        
+        .loader3:before {
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            top: -5px;
+            left: 0px;
+            height: 30px;
+            width: 0px;
+            z-index: 0;
+            opacity: 1;
+            transform-origin: 100% 0%;
+            animation: loader3 5s ease-in-out infinite;
+        }
+        
+        @keyframes loader3 {
+            0% {
+                width: 0px;
+            }
+            70% {
+                width: 100%;
+                opacity: 1;
+            }
+            90% {
+                opacity: 0;
+                width: 100%;
+            }
+            100% {
+                opacity: 0;
+                width: 0px;
+            }
+        }</style><script>window.addEventListener("load", () => hideLoader());
+
+        function hideLoader() {
+            let loadScreen = document.querySelector(".loader-wrapper");
+            document.body.removeChild(loadScreen);
+        }</script><link href="styles.d0b45b60cf656bc784f9.css" rel="stylesheet"></head><body><div class="loader-wrapper"><div class="box"><div class="loader3"></div></div></div><header class="site-home"><div class="navigation"><input type="checkbox" class="navigation__checkbox" id="navi-toggle"> <label for="navi-toggle" class="navigation__button"><span class="navigation__icon"></span></label><div class="navigation__background">&nbsp;</div><nav class="navigation__nav"><ul class="navigation__list"><li class="navigation__item"><a href="#" class="navigation__link">Home</a></li><li class="navigation__item"><a href="#" class="navigation__link">Film</a></li><li class="navigation__item"><a href="#" class="navigation__link">Cast</a></li><li class="navigation__item"><a href="#" class="navigation__link">Director</a></li><li class="navigation__item"><a href="#" class="navigation__link">Credits</a></li><li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li></ul></nav></div><div class="site-home__title"><h1 data-key="home-tilte">coffee in the morning</h1></div><div class="site-home__subtitle"><h3 data-key="home-subtilte">A film by <strong>Rogelio Rodriguez</strong></h3></div><div class="site-home__arrow-btn buttons__arrow-down-w"><ul><li><span></span></li></ul></div><div class="site-home__logo"><img src="./assets/images/logo.png" alt="Rojo y Tostado Productions logo."></div><div class="site-home__credits"><p>&copy; 2020 Rojo y Tostado Productions | by: Edgar Nava</p></div></header><main class="site-main"><div class="site-main__white"><div class="site-main__arrow-btn-up buttons__arrow-up-b"><ul><li><span></span></li></ul></div><div class="wrapper"><div class="site-main__title"><h1 class="site-main__title__text">Dreams and new beginnings...</h1></div><div class="site-main__scene-1"></div></div><div class="site-main__arrow-btn-down buttons__arrow-down-b"><ul><li><span></span></li></ul></div></div><div class="site-main__black"><div class="site-main__arrow-btn-up buttons__arrow-up-w"><ul><li><span></span></li></ul></div><div class="wrapper"><div class="site-main__scene-2"></div><div class="site-main__title"><h1 class="site-main__title__text">... and yet, a distant future.</h1></div></div><div class="site-main__arrow-btn-down buttons__arrow-down-w"><ul><li><span></span></li></ul></div></div><div class="site-main__synopsis"><div class="site-main__arrow-btn-up buttons__arrow-up-b"><ul><li><span></span></li></ul></div><div class="site-main__synopsis__paragraph"><h3 class="site-main__synopsis__title">synopsis</h3><p class="site-main__synopsis__text">A young woman stays in a Doctor’s cabin in the middle of the woods, recovering from her wounds. With extra help from someone unexpected, she starts getting ready to finally go back to her hometown. This might not be yet as safe and easy as she might think.</p></div><div class="site-main__arrow-btn-down buttons__arrow-down-w"><ul><li><span></span></li></ul></div></div><div class="site-main__film"><div class="site-main__arrow-btn-up buttons__arrow-up-b"><ul><li><span></span></li></ul></div><div class="site-main__film__box"><div class="site-main__film__box-1"><h3 class="site-main__film__text">Original Title:</h3><br><h3 class="site-main__film__text">Language:</h3><br><h3 class="site-main__film__text">Subtitles:</h3><br><h3 class="site-main__film__text">Type of production:</h3><br><h3 class="site-main__film__text">Aspect Ratio:</h3><br><h3 class="site-main__film__text">Duration:</h3><br><h3 class="site-main__film__text">Release Year:</h3></div><div class="site-main__film__box-2"><h3 class="site-main__film__text">Café por la mañana</h3><br><h3 class="site-main__film__text">Spanish</h3><br><h3 class="site-main__film__text">English</h3><br><h3 class="site-main__film__text">Narrative Short</h3><br><h3 class="site-main__film__text">2.39</h3><br><h3 class="site-main__film__text">29 min</h3><br><h3 class="site-main__film__text">2019</h3></div></div><div class="site-main__film__making-1"></div><div class="site-main__arrow-btn-down buttons__arrow-down-b"><ul><li><span></span></li></ul></div></div></main><div class="site-cast"><video autoplay muted loop class="site-cast__video"><source src="./assets/images/cast-main.mp4" type="video/mp4"></video><div class="site-cast--melanie"><div class="site-cast--melanie__photo">&nbsp;</div><div class="site-cast--melanie__story"><h3 class="site-cast__title">Melanie Borguez</h3><p class="site-cast__text">Actress and singer graduated from the Bachelor's Degree in Dramatic Literature and Theater, UNAM. Among the montages in which she has participated are "HURT", by Roberto Espinosa, presented at the Edinburgh Festival Fringe 2012, as well as at the 9th Festival of Monologues Theatre to a Solo Voice 2013, and in different cities of Austria in 2015; 1.12, directed by David Psalmon and Jorge Maldonado, with the collective Teatro Sin Paredes; Malintzin by Luis Santillán; Jam every third day, written and directed by Ana María Aparicio; How tall are the buildings in NY?, directed by Diego Alvarez Robledo; Who among us?, directed by Gustavo Beltrán, with Nuna Teatro Contemporáneo; Bicho Rock, directed by Emmanuel Marquez Peralta, with Figurat Teatro. She has also participated in different projects for the screen, independent short films, a feature film directed by Ulysses Guzmán and in the television series “Por la máscara” and “Calles con historia”. Besides focusing on her passion for acting and singing, Melanie is also a founding member of Aztikeria Teatro, a company which has brought to live plays like The Other Shore.</p></div></div><div class="site-cast--mario"><div class="site-cast--mario__photo">&nbsp;</div><div class="site-cast--mario__story--left"><h3 class="site-cast__title">Mario Heras</h3><p class="site-cast__text">Originally from the city of Pachuca Hidalgo. Degree in Communication Science from ITESM. Since 1996 he has performed as an Actor, Singer and Announcer.<br><br>In musical theater, he has participated in the kids projects “Qates”, The Wizard of Oz, Antarctic Emperors, The Rocky Horror Show, and the second staging in Mexico of the Tony award winner, Avenue Q. His last work in musical theatre was in the staging of Man of La Mancha where he played the character of Anselmo.<br><br>In theater stand out his participations in Father is in Atlantis, Cheerful Bride for me Sad and Dead, North and Ana's Things.</p></div><div class="site-cast--mario__story--right"><p class="site-cast__text">In dubbing he has recorded openings for series such as Dragon Ball Z Kai and Babar and the adventures of Badou and characters for shows including Raggs, Covert Affairs, “Yo Gabba Gabba”, Horrible Stories, Littlest Pet Shop and “Superinsectos”.<br><br>In addition to developing in the field of acting, Mario has also produced various projects for institutions such as UNAM and INBA. Founder and Director of Resorte Theatre company dedicated to the creation of shows since 2008.</p></div></div><div class="site-cast--rouse"><div class="site-cast--rouse__story"><h3 class="site-cast__title">Rouse Calderón</h3><p class="site-cast__text">Mexican actress graduated from the Andrés Soler Institute. She participated in plays such as By the way ... Don't Want to Toast?, Unfaithfully Tragicomedia, and in the seasons of Microteatro Mexico of “Por los huevos” and “La Nave”. She has collaborated on short films such as The Working Dead, The Queen and the Dead, The Menstade and now Coffee in the morning. In children's theater she has participated with the company Captain Canutillo and his “Cachivaches” being part of the cast of The Extraordinary History of the Witch who wanted to be Princess and The Person Who Had the Power to Change the World. She currently collaborates in the theater company First Call, participating in the plays Successful But Alone, Until Tomorrow My Love, Let’s Tell the Truth, You Also Told Me I Love you, This Night We Say Goodbye and Need to Finish.</p></div><div class="site-cast--rouse__photo">&nbsp;</div></div></div><div class="site-credits"><div class="site-credits__director"><div class="site-credits__director__photo">&nbsp;</div><div class="site-credits__director__story"><h2 class="site-credits__director__title">Director</h2><h3 class="site-credits__director__subtitle">Rogelio Rodríguez</h3><p class="site-credits__director__text">Mexican director that belonged to club merry. He likes to drink bacardi blanco due to his low budget when going out. Of course you have to give me the text that goes in this briefing.</p></div></div><div class="site-credits__credits"><div class="site-credits__credits__image">&nbsp;</div></div></div><div class="site-gallery"><video autoplay muted loop class="site-gallery__video"><source src="./assets/images/gallery-main.mp4" type="video/mp4"></video><div class="site-gallery__p1"><picture><img class="site-gallery__p1--img1" old-class="lazyload" src="assets/images/gallery/gallery1.jpg" data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Gallery image."></picture></div><div class="site-gallery__p2"><picture><img class="site-gallery__p2--img5" old-class="lazyload" src="assets/images/gallery/gallery5.jpg" data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Gallery image."></picture></div><div class="site-gallery__p3"><picture><img class="site-gallery__p3--img6" old-class="lazyload" src="assets/images/gallery/gallery6.jpg" data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Gallery image."></picture></div></div><script src="main.d0b45b60cf656bc784f9.js"></script></body></html>
