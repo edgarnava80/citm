@@ -1,13 +1,15 @@
 .site-gallery {
     position: relative;
     &__video {
+        display: block;
         position: absolute;
         right: 0;
         bottom: 0;
         min-width: 100%;
-        min-height: 100%;
+        min-height: 100vh;
+        z-index: -1;
     }
-    &__p1 {
+    /*&__p1 {
         height: 100vh;
         position: relative;
         &--img1 {
@@ -60,5 +62,5 @@
                 transform: translateY(-50%);
             }
         }
-    }
+    }*/
 }
