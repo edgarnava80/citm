@@ -152,7 +152,7 @@
             <div class="loader3"></div>
         </div>
     </div>
-    <header class="site-home">
+    <header class="site-home page-section" id="home" matching-link="#home-link">
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
             <label for="navi-toggle" class="navigation__button">
@@ -161,12 +161,12 @@
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Film</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Cast</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Director</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Credits</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+                    <li class="navigation__item"><a href="#home" id="home-link" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#film" id="film-link" class="navigation__link">Film</a></li>
+                    <li class="navigation__item"><a href="#cast" id="cast-link" class="navigation__link">Cast</a></li>
+                    <li class="navigation__item"><a href="#director" id="director-link" class="navigation__link">Director</a></li>
+                    <li class="navigation__item"><a href="#credits" id="credits-link" class="navigation__link">Credits</a></li>
+                    <li class="navigation__item"><a href="#gallery" id="gallery-link" class="navigation__link">Gallery</a></li>
                 </ul>
             </nav>
         </div>
@@ -174,7 +174,7 @@
             <h1 data-key="home-tilte">coffee in the morning</h1>
         </div>
         <div class="site-home__subtitle">
-            <h3 data-key="home-subtilte">A film by <strong>Rogelio Rodriguez</strong></h3>
+            <h3 data-key="home-subtilte">A film by <strong>Rogelio Rodríguez</strong></h3>
         </div>
         <div class="site-home__arrow-btn buttons__arrow-down-w">
             <ul>
@@ -188,7 +188,7 @@
             <p>&copy; 2020 Rojo y Tostado Productions | by: Edgar Nava</p>
         </div>
     </header>
-    <main class="site-main">
+    <main class="site-main page-section" id="film" matching-link="#film-link">
         <div class="site-main__white">
             <div class="site-main__arrow-btn-up buttons__arrow-up-b">
                 <ul>
@@ -282,7 +282,7 @@
             </div>
         </div>
     </main>
-    <div class="site-cast">
+    <div class="site-cast page-section" id="cast" matching-link="#cast-link">
         <video autoplay muted loop class="site-cast__video">
                 <source src="./assets/images/cast-main.mp4" type="video/mp4">
         </video>
@@ -328,7 +328,7 @@
         </div>
     </div>
     <div class="site-credits">
-        <div class="site-credits__director">
+        <div class="site-credits__director page-section" id="director" matching-link="#director-link">
             <div class="site-credits__director__photo">
                 &nbsp;
             </div>
@@ -338,13 +338,13 @@
                 <p class="site-credits__director__text">Mexican director that belonged to club merry. He likes to drink bacardi blanco due to his low budget when going out. Of course you have to give me the text that goes in this briefing. </p>
             </div>
         </div>
-        <div class="site-credits__credits">
+        <div class="site-credits__credits page-section" id="credits" matching-link="#credits-link">
             <div class="site-credits__credits__image">
                 &nbsp;
             </div>
         </div>
     </div>
-    <div class="site-gallery">
+    <div class="site-gallery page-section" id="gallery" matching-link="#gallery-link">
         <video autoplay muted loop class="site-gallery__video">
             <source src="./assets/images/gallery-main.mp4" type="video/mp4">
         </video>

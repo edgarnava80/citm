@@ -1,13 +1,16 @@
 import '../styles/styles.css'
 import Slider from './modules/Slider'
+import Menu from './modules/Menu'
 import RevealOnScroll from './modules/RevealOnScroll'
 //import ActionOnScroll from './modules/ActionOnScroll'
 
+new Menu()
 new RevealOnScroll(document.querySelectorAll(".site-main__film"), 95)
 new RevealOnScroll(document.querySelectorAll(".site-cast--melanie"), 95)
 new RevealOnScroll(document.querySelectorAll(".site-cast--mario"), 95)
 new RevealOnScroll(document.querySelectorAll(".site-cast--rouse"), 95)
 new Slider('.slide', '#arrow-left', '#arrow-right')
+
 
 let browserHeight = window.innerHeight
 let title = document.querySelector('.site-home__title')

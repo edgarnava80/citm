@@ -1,3 +1,4 @@
 .navigation {
     @mixin button-navigation;
+    animation: showMenu 4s ease-out;
 }
