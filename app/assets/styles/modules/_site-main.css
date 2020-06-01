@@ -1,4 +1,5 @@
     .site-main {
+        transition: all .1 ease-out;
         &__white {
             height: 100vh;
             position: relative;
@@ -12,13 +13,19 @@
                 background-attachment: fixed;
             }
         }
-        &__arrow-btn-up {
-            @mixin arrow-btn-up;
-        }
-        &__title {
-            position: relative;
+        &__title-1 {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            @mixin atSmall {
+                width: 50%;
+                height: 100%;
+            }
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
             &__text {
-                @mixin center 40%;
+                position: absolute;
                 width: 80%;
                 font-family: $font-main, serif;
                 font-size: 4rem;
@@ -36,19 +43,64 @@
             }
         }
         &__scene-1 {
-            background: url('./assets/images/scene1-main.jpg') center no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            @mixin atSmall {
+                width: 50%;
+                height: 100%;
+                bottom: 0;
+                right: 0;
+            }
+            background: url('./assets/images/scene1-main.jpg') bottom no-repeat;
             background-size: contain;
-        }
-        &__arrow-btn-down {
-            @mixin arrow-btn-down;
         }
         &__black {
             height: 100vh;
             background-color: $color-black;
             position: relative;
         }
+        &__title-2 {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            @mixin atSmall {
+                width: 50%;
+                height: 100%;
+                right: 0;
+            }
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            &__text {
+                position: absolute;
+                width: 80%;
+                font-family: $font-main, serif;
+                font-size: 4rem;
+                line-height: 1.3;
+                color: $color-grey-light;
+                @mixin atSmall {
+                    font-size: 3rem;
+                }
+                @mixin atMedium {
+                    font-size: 4rem;
+                }
+                @mixin atLarge {
+                    font-size: 5rem;
+                }
+            }
+        }
         &__scene-2 {
-            background: url('./assets/images/scene2-main.jpg') center no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            @mixin atSmall {
+                width: 50%;
+                height: 100%;
+                bottom: 0;
+                left: 0;
+            }
+            background: url('./assets/images/scene2-main.jpg') bottom no-repeat;
             background-size: contain;
         }
         &__synopsis {
