@@ -63,13 +63,13 @@ class ScrollManager {
                 mainImageP2.style.transform = 'translate(0px,' + ((this.scrolledVertically / -4) + (this.scrolledVertically - this.browserHeight) / 2) + 'px)'
             }
             if (this.getCurrentTop() > 1.5) {
-                console.log('Opacity ' + (2 + (this.scrolledVertically - this.browserHeight) / -400))
                 mainTitleP2.style.opacity = 2.25 + (this.scrolledVertically - this.browserHeight) / -400
                 mainImageP2.style.opacity = 2.25 + (this.scrolledVertically - this.browserHeight) / -400
             }*/
         }
         // Method to trigger the actions on page 3
     actionsP3() {
+        console.log('Transform' + (this.scrolledVertically / -2))
         const mainTitleP3 = document.querySelector('.site-main__title-2__text')
         const mainImageP3 = document.querySelector('.site-main__scene-2')
         if (this.getCurrentTop() < 2) {

@@ -6,7 +6,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: url('./assets/images/back-main.jpg') top center no-repeat;
+        background: url('./assets/images/back-main.jpg') center no-repeat;
         background-size: cover;
         background-attachment: fixed;
         filter: saturate(0.9) contrast(.7) brightness(.7) grayscale(20%);
@@ -17,24 +17,26 @@
         font-family: $font-title, serif;
         font-size: 1.5rem;
         color: $color-white;
-        text-transform: capitalize;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
         margin-bottom: 1rem;
         position: absolute;
-        top: calc(50% - 10rem);
+        top: calc(50% - 5rem);
         @mixin atSmall {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
         @mixin atMedium {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             margin-bottom: 2rem;
         }
     }
     &__subtitle {
         width: 100%;
         text-align: center;
-        font-family: $font-subtitle, serif;
+        font-family: $font-title, serif;
         font-size: 1rem;
+        letter-spacing: .3rem;
         color: $color-white;
         position: absolute;
         top: calc(50% + 5rem);
@@ -56,8 +58,9 @@
         bottom: .2rem;
         left: 0;
         color: $color-white;
-        font-family: $font-copy, serif;
+        font-family: $font-main, serif;
         font-size: .8rem;
+        letter-spacing: .1rem;
         text-transform: uppercase;
         transform: scale(.7) translateX(-5rem);
         @mixin atSmall {

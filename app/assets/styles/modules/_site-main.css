@@ -27,18 +27,20 @@
             &__text {
                 position: absolute;
                 width: 80%;
-                font-family: $font-main, serif;
+                font-family: $font-title, serif;
                 font-size: 4rem;
+                font-weight: lighter;
+                letter-spacing: .2rem;
                 line-height: 1.3;
                 color: $color-grey-light;
                 @mixin atSmall {
                     font-size: 3rem;
                 }
                 @mixin atMedium {
-                    font-size: 4rem;
+                    font-size: 3.5rem;
                 }
                 @mixin atLarge {
-                    font-size: 5rem;
+                    font-size: 4rem;
                 }
             }
         }
@@ -75,18 +77,19 @@
             &__text {
                 position: absolute;
                 width: 80%;
-                font-family: $font-main, serif;
+                font-family: $font-title, serif;
                 font-size: 4rem;
+                letter-spacing: .2rem;
                 line-height: 1.3;
                 color: $color-grey-light;
                 @mixin atSmall {
                     font-size: 3rem;
                 }
                 @mixin atMedium {
-                    font-size: 4rem;
+                    font-size: 3.5rem;
                 }
                 @mixin atLarge {
-                    font-size: 5rem;
+                    font-size: 4rem;
                 }
             }
         }
@@ -129,29 +132,29 @@
                     width: 80%;
                 }
                 @mixin atLarge {
-                    width: 70%;
+                    width: 80%;
                 }
             }
             &__title {
                 font-family: $font-main, serif;
                 text-transform: uppercase;
-                margin-bottom: 2rem;
+                margin-bottom: 6rem;
                 font-size: 1.8rem;
+                font-weight: lighter;
                 @mixin atSmall {
-                    margin-bottom: 2rem;
-                    font-size: 2rem;
-                }
-                @mixin atMedium {
-                    margin-bottom: 2rem;
                     font-size: 2.5rem;
                 }
-                @mixin atLarge {
-                    margin-bottom: 2rem;
+                @mixin atMedium {
                     font-size: 3rem;
+                }
+                @mixin atLarge {
+                    font-size: 3.5rem;
+                    letter-spacing: .5rem;
                 }
             }
             &__text {
-                font-weight: 400;
+                font-family: $font-main, serif;
+                font-weight: lighter;
                 letter-spacing: 1px;
                 font-size: 1.8rem;
                 @mixin atSmall {
@@ -163,8 +166,7 @@
                     font-size: 2.5rem;
                 }
                 @mixin atLarge {
-                    font-weight: 600;
-                    letter-spacing: 3px;
+                    letter-spacing: .5rem;
                     font-size: 3rem;
                 }
             }
@@ -181,15 +183,8 @@
                 height: 50%;
                 grid-template: 100% / 50% 50%;
                 @mixin atSmall {
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 70%;
-                    height: 50%;
-                }
-                @mixin atMedium {
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 70%;
+                    top: 30%;
+                    width: 60%;
                     height: 50%;
                 }
             }
@@ -230,7 +225,10 @@
                 padding-left: .5rem;
             }
             &__text {
+                font-family: $font-main, serif;
                 font-size: 1.8rem;
+                letter-spacing: .2rem;
+                font-weight: lighter;
                 @mixin atSmall {
                     font-size: 2rem;
                 }
