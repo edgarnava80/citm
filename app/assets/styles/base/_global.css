@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-family: $font-main;
+    font-family: $font-main, serif;
 }
 
 img {
