@@ -68,7 +68,7 @@
         }
         &__subtitle {
             text-align: center;
-            font-size: 1.8rem;
+            font-size: 2.5rem;
             color: $color-white;
             font-weight: lighter;
             padding-bottom: 1rem;
@@ -83,7 +83,7 @@
         }
         &__text {
             text-align: justify;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             color: $color-white;
             @mixin atSmall {
                 font-size: 2rem;
