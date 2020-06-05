@@ -50,7 +50,9 @@
         }
     }
     &__arrow-btn {
+        opacity: 0;
         @mixin arrow-btn-down;
+        animation: blinkingArrow 3s ease infinite;
     }
     &__credits {
         position: absolute;
@@ -58,7 +60,6 @@
         bottom: .2rem;
         left: 0;
         color: $color-white;
-        font-family: $font-main, serif;
         font-size: .8rem;
         letter-spacing: .1rem;
         text-transform: uppercase;

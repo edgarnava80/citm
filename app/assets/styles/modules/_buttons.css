@@ -17,3 +17,7 @@
         -135deg;
     }
 }
+
+.blinkArrows {
+    animation: blinkingArrow 2s ease;
+}

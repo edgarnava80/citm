@@ -1,0 +1,64 @@
+.social-media {
+    margin: 2rem 0;
+    ul li {
+        list-style: none;
+        //padding: 2rem 2rem;
+        margin: 0 .5rem;
+        cursor: pointer;
+        border-radius: 10%;
+        //transition: all 0.5s ease;
+        //border: 1px solid black;
+        overflow: hidden;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    a {
+        font-size: 4rem;
+        overflow: hidden;
+        line-height: 1;
+    }
+}
+
+.linkedin {
+    background-color: $color-white;
+}
+
+.a-linkedin {
+    color: #118BC2;
+}
+
+.facebook {
+    background-color: $color-white;
+}
+
+.a-facebook {
+    color: #4B6EA9;
+}
+
+.twitter {
+    background-color: $color-white;
+}
+
+.a-twitter {
+    color: #19B2F5;
+}
+
+.imdb {
+    //width: 4rem;
+    //height: 3rem;
+    //background-color: $color-white;
+    //background-color: #102538;
+    //line-height: 1;
+    //border: 3px solid #FCBE09;
+}
+
+.a-imdb {
+    padding: 0;
+    //border: 3px solid #FCBE09;
+    color: #FCBE09;
+    background-color: #102538;
+    //background-color: $color-white;
+}

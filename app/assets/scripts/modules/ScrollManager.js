@@ -77,6 +77,10 @@ class ScrollManager {
             mainImageP3.style.transform = 'translate(0px,' + this.scrolledVertically / -4 + 'px)'
         }
     }
+    blinkArrow() {
+        const arrowDown = document.querySelector('.site-home__arrow-btn')
+        arrowDown.classList.toggle('blinkArrows')
+    }
 }
 
 export default ScrollManager

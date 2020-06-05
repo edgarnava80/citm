@@ -1,0 +1,56 @@
+.site-contact {
+    height: 100vh;
+    display: grid;
+    grid-template: 94% 6% / 100%;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //justify-content: center;
+        &__img {
+            position: relative;
+            width: 25%;
+            height: 55%;
+            img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-40%);
+            }
+        }
+        &__info {
+            width: 25%;
+            height: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.8rem;
+            @mixin atSmall {
+                font-size: 2rem;
+            }
+            @mixin atMedium {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    &__footer {
+        position: relative;
+        background-color: $color-black;
+        color: $color-white;
+        font-size: .8rem;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
+        @mixin atMedium {
+            font-size: 1.4rem;
+        }
+        p {
+            position: absolute;
+            top: calc(50% - 10px);
+            left: 1%;
+        }
+    }
+}
