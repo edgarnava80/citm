@@ -24,3 +24,15 @@
         opacity: 0;
     }
 }
+
+@keyframes rotateRight {
+    50% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotateLeft {
+    50% {
+        transform: rotate(-90deg);
+    }
+}

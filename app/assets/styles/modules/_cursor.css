@@ -1,0 +1,43 @@
+.cursor {
+    &--one {
+        width: 4rem;
+        height: 4rem;
+        border: 2px solid white;
+        //border-radius: 50%;
+        position: absolute;
+        pointer-events: none;
+        z-index: 1;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+    }
+    &--two {
+        width: 4rem;
+        height: 4rem;
+        border: 2px solid white;
+        transform: rotate(45deg);
+        //border-radius: 50%;
+        position: absolute;
+        pointer-events: none;
+        z-index: 1;
+        transition-duration: 150ms;
+        transition-timing-function: ease-out;
+    }
+    &--three {
+        width: 4rem;
+        height: 4rem;
+        border: 2px solid white;
+        border-radius: 50%;
+        position: absolute;
+        pointer-events: none;
+        z-index: 1;
+        transition-duration: 100ms;
+        transition-timing-function: ease-out;
+    }
+    &--rotate-right {
+        animation: rotateRight 200ms infinite;
+    }
+    &--rotate-left {
+        transform: scale(.7);
+        animation: rotateRight 200ms infinite;
+    }
+}

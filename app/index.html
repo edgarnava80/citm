@@ -50,32 +50,6 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
-        /*.loader8 {
-            position: relative;
-            width: 40px;
-            height: 40px;
-            top: 65%;
-            top: calc(10% - 20px);
-            left: 35%;
-            left: calc(50% - 20px);
-            border-radius: 50px;
-            background-color: rgba(255, 255, 255, .2);
-            border-width: 20px;
-            border-style: double;
-            border-color: transparent #D34F1D;
-            box-sizing: border-box;
-            transform-origin: 50% 50%;
-            animation: loader8 2s linear infinite;
-        }
-        
-        @keyframes loader8 {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }*/
         
         .loader3 {
             position: relative;
@@ -145,6 +119,9 @@
 </head>
 
 <body>
+    <div class="cursor--one"></div>
+    <div class="cursor--two"></div>
+    <div class="cursor--three"></div>
     <div class="loader-wrapper">
         <div class="box">
             <div class="ryt"></div>
@@ -158,7 +135,7 @@
             <label for="navi-toggle" class="navigation__button">
                     <span class="navigation__icon"></span>
                 </label>
-            <div class="navigation__background">&nbsp;</div>
+            <div class="navigation__background cursor-effect">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#home" id="home-link" class="navigation__link">Home</a></li>
@@ -170,6 +147,20 @@
                     <li class="navigation__item"><a href="#contact" id="contact-link" class="navigation__link">Contact</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="sound cursor-effect">
+            <i class="sound__icon fas fa-volume-up"></i>
+            <audio class="sound__audio" autoplay src="./assets/images/audio1.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="share cursor-effect">
+            <i class="share__icon fas fa-share-alt"></i>
+            <div class="share__list">
+                <a class="share__item share__item--facebook" href="https://www.facebook.com/sharer.php?u=http://rojoytostado.com/coffeeinthemorning"><i class="fab fa-facebook-square"></i></a>
+                <a class="share__item share__item--twitter" href="https://www.twitter.com/intent/tweet?text=http://rojoytostado.com/coffeeinthemorning"><i class="fab fa-twitter-square"></i></a>
+                <a class="share__item share__item--instagram" href="https://www.instagram.com/sharer.php?u=http://rojoytostado.com/coffeeinthemorning"><i class="fab fa-instagram-square"></i></a>
+                <a class="share__item share__item--linkedin" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                <a class="share__item share__item--whatsapp" href="whatsapp://send?text=http://rojoytostado.com/coffeeinthemorning"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
         </div>
         <div class="site-home__title">
             <h1 data-key="home-tilte">coffee in the morning</h1>
@@ -183,7 +174,7 @@
             </ul>
         </div>
         <div class="site-home__logo">
-            <img src="./assets/images/logo.png" alt="Rojo y Tostado Productions logo.">
+            <img src="./assets/images/logo.png" alt="Rojo y Tostado Productions logo. ">
         </div>
         <div class="site-home__credits">
             <p>&copy; 2020 Rojo y Tostado Productions | by: Edgar Nava</p>
@@ -195,12 +186,12 @@
                 <h1 class="site-main__title-1__text">Dreams and new beginnings...</h1>
             </div>
             <div class="site-main__scene-1">
-                <!--<img class="site-main__image--rigth" src="/assets/images/scene-1.jpeg" alt="Film scene photo.">-->
+                <!--<img class="site-main__image--rigth " src="/assets/images/scene-1.jpeg " alt="Film scene photo. ">-->
             </div>
         </div>
         <div class="site-main__black">
             <div class="site-main__scene-2">
-                <!--<img class="site-main__image--rigth" src="/assets/images/scene-1.jpeg" alt="Film scene photo.">-->
+                <!--<img class="site-main__image--rigth " src="/assets/images/scene-1.jpeg " alt="Film scene photo. ">-->
             </div>
             <div class="site-main__title-2">
                 <h1 class="site-main__title-2__text">... and yet, a distant future.</h1>
@@ -240,12 +231,12 @@
                 </div>
             </div>
             <div class="site-main__film__making-1">
-                <!--<img class="site-main__image--rigth" src="/assets/images/scene-1.jpeg" alt="Film scene photo.">-->
+                <!--<img class="site-main__image--rigth " src="/assets/images/scene-1.jpeg " alt="Film scene photo. ">-->
             </div>
         </div>
     </main>
     <div class="site-cast page-section" id="cast" matching-link="#cast-link">
-        <video autoplay muted loop class="site-cast__video">
+        <video autoplay muted loop class="site-cast__video ">
                 <source src="./assets/images/cast-main.mp4" type="video/mp4">
         </video>
         <div class="site-cast--melanie">
@@ -255,11 +246,11 @@
             <div class="site-cast--melanie__story">
                 <h3 class="site-cast__title"><strong> Melanie Borguez</strong></h3>
                 <p class="site-cast__text">Actress and singer graduated from the Bachelor's Degree in Dramatic Literature and Theater, UNAM.</br>
-                    Among the montages in which she has participated are "HURT", by Roberto Espinosa, presented at the Edinburgh Festival Fringe 2012, as well as at the 9th Festival of Monologues Theatre to a Solo Voice 2013, and in different cities of Austria in 2015; 1.12,
-                    directed by David Psalmon and Jorge Maldonado, with the collective Teatro Sin Paredes; Malintzin by Luis Santillán; Jam every third day, written and directed by Ana María Aparicio; How tall are the buildings in NY?, directed by Diego
-                    Alvarez Robledo; Who among us?, directed by Gustavo Beltrán, with Nuna Teatro Contemporáneo; Bicho Rock, directed by Emmanuel Marquez Peralta, with Figurat Teatro.</br> She has also participated in different projects
-                    for the screen, independent short films, a feature film directed by Ulysses Guzmán and in the television series “Por la máscara” and “Calles con historia”.</br> Besides focusing on her passion for acting and singing, Melanie is also
-                    a founding member of Aztikeria Teatro, a company which has brought to live plays like The Other Shore.</p>
+                    Among the montages in which she has participated are "HURT ", by Roberto Espinosa, presented at the Edinburgh Festival Fringe 2012, as well as at the 9th Festival of Monologues Theatre to a Solo Voice 2013, and in different cities of Austria in 2015;
+                    1.12, directed by David Psalmon and Jorge Maldonado, with the collective Teatro Sin Paredes; Malintzin by Luis Santillán; Jam every third day, written and directed by Ana María Aparicio; How tall are the buildings in NY?, directed
+                    by Diego Alvarez Robledo; Who among us?, directed by Gustavo Beltrán, with Nuna Teatro Contemporáneo; Bicho Rock, directed by Emmanuel Marquez Peralta, with Figurat Teatro.</br> She has also participated in different
+                    projects for the screen, independent short films, a feature film directed by Ulysses Guzmán and in the television series “Por la máscara” and “Calles con historia”.</br> Besides focusing on her passion for acting and singing, Melanie
+                    is also a founding member of Aztikeria Teatro, a company which has brought to live plays like The Other Shore.</p>
             </div>
         </div>
         <div class="site-cast--mario">
@@ -298,9 +289,9 @@
             <div class="site-credits__director__story">
                 <h2 class="site-credits__director__title"><strong>Director</strong></h2>
                 <h3 class="site-credits__director__subtitle"> <strong> Rogelio Rodríguez</strong></h3>
-                <p class="site-credits__director__text">(Mexico City, Mexico, 1980). Rogelio Rodriguez, also known by his friends as "Roger", is a CG artist and filmmaker who grew up always interested in films and their stories.</br> He studied Communication Science at the ITESM in Mexico City
-                    and after graduating, he started working as copywriter at Z Publicidad for clients like Bacardi, Volkswagen, to name a couple. He transitions to working on set, shooting commercials as 2nd A.D. for brands like Volkswagen, DHL, Ford,
-                    Nestle, among others.</br> After some years, he takes a postgraduate degree in animation at Sheridan College and transitions to VFX and animation. He then works in the layout department in projects such as: Gnomeo & Juliet, EXODUS:
+                <p class="site-credits__director__text">(Mexico City, Mexico, 1980). Rogelio Rodriguez, also known by his friends as "Roger ", is a CG artist and filmmaker who grew up always interested in films and their stories.</br> He studied Communication Science at the ITESM in Mexico
+                    City and after graduating, he started working as copywriter at Z Publicidad for clients like Bacardi, Volkswagen, to name a couple. He transitions to working on set, shooting commercials as 2nd A.D. for brands like Volkswagen, DHL,
+                    Ford, Nestle, among others.</br> After some years, he takes a postgraduate degree in animation at Sheridan College and transitions to VFX and animation. He then works in the layout department in projects such as: Gnomeo & Juliet, EXODUS:
                     Gods and Kings, The Jungle Book, Pirates of the Caribbean 5 and the VR preproduction teamfor The Lion King.</br> He is currently Head of the Layout department at the VFX studio DNEG in Vancouver, working on projects like Hobbs & Shaw,
                     Venom, Wonder Woman II, Dune, Ghostbusters 3, and streaming shows like Catch 22, The Boys, Hotzone, to name a few. </p>
             </div>
@@ -318,7 +309,7 @@
 
         <div class="image-slider">
             <div id="arrow-left" class="arrow"></div>
-            <div id="slider">
+            <div id="slider ">
                 <div class="slide slide1">
                     &nbsp;
                 </div>
@@ -353,16 +344,16 @@
                 <nav class="social-media">
                     <ul class="social-media__list">
                         <li class="social-media__element linkedin">
-                            <a class="a-linkedin" href="wwww.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                            <a class="social-media__link a-linkedin" href="https://www.linkedin.com/in/rogerodriguez/"><i class="fab fa-linkedin"></i></a>
                         </li>
-                        <li class="social-media__element facebook">
-                            <a class="a-facebook" href=""><i class="fab fa-facebook-square"></i></a>
+                        <li class="social-media__element facebook ">
+                            <a class="social-media__link a-facebook " href="https://www.facebook.com/rojoytostado/"><i class="fab fa-facebook-square"></i></a>
                         </li>
                         <li class="social-media__element twitter">
-                            <a class="a-twitter" href=""><i class="fab fa-twitter-square"></i></a>
+                            <a class="social-media__link a-twitter" href="https://twitter.com/rojoytostado"><i class="fab fa-twitter-square"></i></a>
                         </li>
                         <li class="social-media__element imdb">
-                            <a class="a-imdb" href=""><i class="fab fa-imdb"></i></a>
+                            <a class="social-media__link a-imdb" href="https://www.imdb.com/name/nm1675426/?ref_=fn_al_nm_1"><i class="fab fa-imdb"></i></a>
                         </li>
                     </ul>
                 </nav>

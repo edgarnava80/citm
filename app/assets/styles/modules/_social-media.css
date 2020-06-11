@@ -1,6 +1,7 @@
 .social-media {
     margin: 2rem 0;
-    ul li {
+    &__list,
+    &__element {
         list-style: none;
         //padding: 2rem 2rem;
         margin: 0 .5rem;
@@ -15,7 +16,7 @@
         justify-content: center;
         align-content: center;
     }
-    a {
+    &__link {
         font-size: 4rem;
         overflow: hidden;
         line-height: 1;
@@ -61,4 +62,62 @@
     color: #FCBE09;
     background-color: #102538;
     //background-color: $color-white;
+}
+
+.share-container {
+    position: fixed;
+    height: 2rem;
+    width: 2rem;
+    top: 1%;
+    right: 5%;
+    display: flex;
+    &__nav {
+        display: flex;
+        justify-content: center;
+        width: 2rem;
+    }
+    &__list {
+        list-style: none;
+        text-align: center;
+    }
+    &__item {
+        list-style: none;
+        padding: 1rem;
+        text-align: center;
+        //background-color: white;
+        border-radius: 50px;
+        margin: 0.5rem 0rem;
+    }
+    &__button {
+        padding: .5rem;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 50px;
+        margin: 0.5rem 0rem;
+        cursor: pointer;
+        outline: none;
+        border-style: none;
+        width: 100%;
+    }
+    &__icon {
+        font-size: 2rem;
+        background: rgba(0, 0, 0, .5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #dropdown-box {
+        background: #ebebeb;
+        padding: 0.5rem;
+        border-radius: 50px;
+        transition: ease-in-out 1.8s;
+        transform: translateY(-5px);
+        opacity: 0;
+    }
+    &__button:focus+#dropdown-box {
+        transform: translateY(5px);
+        opacity: 1;
+    }
+    &__button:focus+#dropdown-box>ul>li {
+        cursor: pointer;
+    }
 }

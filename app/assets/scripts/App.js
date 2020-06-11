@@ -2,11 +2,15 @@ import '../styles/styles.css'
 import ScrollManager from './modules/ScrollManager'
 import Slider from './modules/Slider'
 import Menu from './modules/Menu'
+import Sound from './modules/Sound'
 import RevealOnScroll from './modules/RevealOnScroll'
-//import ActionOnScroll from './modules/ActionOnScroll'
+import Cursor from './modules/Cursor'
 
 const scroll = new ScrollManager()
+
 new Menu()
+new Sound()
+new Cursor()
     //new RevealOnScroll(document.querySelectorAll(".site-main__film"), 95)
     //new RevealOnScroll(document.querySelectorAll(".site-cast--melanie"), 95)
     //new RevealOnScroll(document.querySelectorAll(".site-cast--mario"), 95)
@@ -14,9 +18,6 @@ new Menu()
 new Slider('.slide', '#arrow-left', '#arrow-right')
 
 
-console.log('browserHeight: ' + scroll.browserHeight)
-console.log('scrolledVertically: ' + scroll.scrolledVertically)
-console.log('currentTop: ' + scroll.getCurrentTop())
 
 /*
 let browserHeight = window.innerHeight
