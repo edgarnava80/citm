@@ -1,37 +1,49 @@
 .cursor {
     &--one {
+        visibility: hidden;
         width: 4rem;
         height: 4rem;
-        border: 2px solid white;
+        border: 2px solid $color-ryt-orange;
         //border-radius: 50%;
         position: absolute;
         pointer-events: none;
-        z-index: 1;
-        transition-duration: 200ms;
+        z-index: 100;
+        transition-duration: 400ms;
         transition-timing-function: ease-out;
+        @mixin atSmall {
+            visibility: visible;
+        }
     }
     &--two {
+        visibility: hidden;
         width: 4rem;
         height: 4rem;
-        border: 2px solid white;
+        border: 2px solid $color-ryt-red;
         transform: rotate(45deg);
         //border-radius: 50%;
         position: absolute;
         pointer-events: none;
-        z-index: 1;
-        transition-duration: 150ms;
+        z-index: 100;
+        transition-duration: 300ms;
         transition-timing-function: ease-out;
+        @mixin atSmall {
+            visibility: visible;
+        }
     }
     &--three {
+        visibility: hidden;
         width: 4rem;
         height: 4rem;
-        border: 2px solid white;
+        border: 2px solid $color-grey-light;
         border-radius: 50%;
         position: absolute;
         pointer-events: none;
-        z-index: 1;
-        transition-duration: 100ms;
+        z-index: 100;
+        transition-duration: 200ms;
         transition-timing-function: ease-out;
+        @mixin atSmall {
+            visibility: visible;
+        }
     }
     &--rotate-right {
         animation: rotateRight 200ms infinite;

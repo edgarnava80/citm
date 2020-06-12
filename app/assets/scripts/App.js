@@ -11,10 +11,6 @@ const scroll = new ScrollManager()
 new Menu()
 new Sound()
 new Cursor()
-    //new RevealOnScroll(document.querySelectorAll(".site-main__film"), 95)
-    //new RevealOnScroll(document.querySelectorAll(".site-cast--melanie"), 95)
-    //new RevealOnScroll(document.querySelectorAll(".site-cast--mario"), 95)
-    //new RevealOnScroll(document.querySelectorAll(".site-cast--rouse"), 95)
 new Slider('.slide', '#arrow-left', '#arrow-right')
 
 

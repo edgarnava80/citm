@@ -14,7 +14,7 @@
         }
     }
     &--melanie {
-        height: 100vh;
+        height: 110vh;
         position: relative;
         &__photo {
             position: absolute;
@@ -106,7 +106,7 @@
         }
     }
     &--mario {
-        height: 100vh;
+        height: 110vh;
         position: relative;
         &__photo {
             position: absolute;
@@ -173,7 +173,7 @@
         }
     }
     &--rouse {
-        height: 100vh;
+        height: 110vh;
         position: relative;
         &__story {
             position: absolute;

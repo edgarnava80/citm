@@ -28,7 +28,7 @@ class ScrollManager {
         this.defineScrollDirection()
             //Methods to execute on scroll defined for each particular website
         if (this.getCurrentTop() < 1) this.actionsP1()
-        if (this.getCurrentTop() > .1 && this.getCurrentTop() < 2) this.actionsP2()
+            //if (this.getCurrentTop() > .1 && this.getCurrentTop() < 2) this.actionsP2()
             //if (this.getCurrentTop() > 1.1 && this.getCurrentTop() < 2) this.actionsP3()
     }
 
