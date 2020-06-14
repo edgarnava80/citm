@@ -8,7 +8,7 @@ class Cursor {
     }
     events() {
         window.addEventListener("mousemove", e => {
-            console.log("In mousemove: " + e)
+            //console.log("In mousemove: " + e)
             this.tailOne.setAttribute("style", "top: " + (e.pageY - 20) + "px; left: " + (e.pageX - 20) + "px;")
             this.tailTwo.setAttribute("style", "top: " + (e.pageY - 20) + "px; left: " + (e.pageX - 20) + "px;")
             this.tailThree.setAttribute("style", "top: " + (e.pageY - 20) + "px; left: " + (e.pageX - 20) + "px;")

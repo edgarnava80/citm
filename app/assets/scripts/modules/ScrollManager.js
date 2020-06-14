@@ -28,8 +28,9 @@ class ScrollManager {
         this.defineScrollDirection()
             //Methods to execute on scroll defined for each particular website
         if (this.getCurrentTop() < 1) this.actionsP1()
-            //if (this.getCurrentTop() > .1 && this.getCurrentTop() < 2) this.actionsP2()
-            //if (this.getCurrentTop() > 1.1 && this.getCurrentTop() < 2) this.actionsP3()
+        this.actionsP2()
+        this.actionsP3()
+        this.actionsP4()
     }
 
     defineScrollDirection() {
@@ -52,29 +53,42 @@ class ScrollManager {
         }
         // Method to trigger the actions on page 2
     actionsP2() {
-            const mainTitleP2 = document.querySelector('.site-main__title-1__text')
+            const mainTitleP2 = document.querySelector('.site-main__title-1')
             const mainImageP2 = document.querySelector('.site-main__scene-1')
-            if (this.getCurrentTop() < 1) {
-                mainTitleP2.style.transform = 'translate(0px,' + this.scrolledVertically / -2 + 'px)'
-                mainImageP2.style.transform = 'translate(0px,' + this.scrolledVertically / -4 + 'px)'
+
+            if (this.getCurrentTop() > .9 || this.getCurrentTop() < 1) {
+                mainImageP2.classList.add('rightLeft')
+                mainTitleP2.classList.add('leftRight')
             }
-            /*if (this.getCurrentTop() > 1) {
-                mainTitleP2.style.transform = 'translate(0px,' + ((this.scrolledVertically / -2) + (this.scrolledVertically - this.browserHeight)) + 'px)'
-                mainImageP2.style.transform = 'translate(0px,' + ((this.scrolledVertically / -4) + (this.scrolledVertically - this.browserHeight) / 2) + 'px)'
+            if (this.getCurrentTop() > 2 || this.getCurrentTop() < .2) {
+                mainImageP2.classList.remove('rightLeft')
+                mainTitleP2.classList.remove('leftRight')
             }
-            if (this.getCurrentTop() > 1.5) {
-                mainTitleP2.style.opacity = 2.25 + (this.scrolledVertically - this.browserHeight) / -400
-                mainImageP2.style.opacity = 2.25 + (this.scrolledVertically - this.browserHeight) / -400
-            }*/
         }
         // Method to trigger the actions on page 3
     actionsP3() {
-        console.log('Transform' + (this.scrolledVertically / -2))
-        const mainTitleP3 = document.querySelector('.site-main__title-2__text')
+        const mainTitleP3 = document.querySelector('.site-main__title-2')
         const mainImageP3 = document.querySelector('.site-main__scene-2')
+        if (this.getCurrentTop() > 1.9 || this.getCurrentTop() < 2) {
+            mainImageP3.classList.add('leftRight')
+            mainTitleP3.classList.add('rightLeft')
+        }
+        if (this.getCurrentTop() > 3 || this.getCurrentTop() < 1.2) {
+            mainImageP3.classList.remove('leftRight')
+            mainTitleP3.classList.remove('rightLeft')
+        }
+    }
+    actionsP4() {
+        console.log('CurrentTop: ' + this.getCurrentTop())
+        const mainTitleP4 = document.querySelector('.site-main__synopsis__title')
+        const mainSubtitleP4 = document.querySelector('.site-main__synopsis__text')
+        if (this.getCurrentTop() > 3) {
+            mainTitleP4.classList.add('fadeIn')
+            mainSubtitleP4.classList.add('fadeIn')
+        }
         if (this.getCurrentTop() < 2) {
-            mainTitleP3.style.transform = 'translate(0px,' + this.scrolledVertically / -2 + 'px)'
-            mainImageP3.style.transform = 'translate(0px,' + this.scrolledVertically / -4 + 'px)'
+            mainTitleP4.classList.remove('fadeIn')
+            mainSubtitleP4.classList.remove('fadeIn')
         }
     }
     blinkArrow() {
