@@ -36,8 +36,8 @@
     height: 40%;
     //padding-bottom: calc(55%*10/14);
     @mixin atSmall {
-        width: 55%;
-        padding-bottom: calc(55%*10/14);
+        width: 50%;
+        padding-bottom: calc(50%*10/14);
     }
     @mixin atLarger {
         width: 45%;

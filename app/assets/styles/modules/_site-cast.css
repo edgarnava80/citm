@@ -1,7 +1,7 @@
 .site-cast {
-    background: url('./assets/images/cast-main.jpg') top center no-repeat;
-    background-size: cover;
     @mixin atSmall {
+        background: url('./assets/images/cast-main.jpg') top center no-repeat;
+        background-size: cover;
         position: relative;
         &__video {
             display: block;
