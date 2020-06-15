@@ -9,7 +9,7 @@ const scroll = new ScrollManager()
 
 new Menu()
 new Sound()
-new Cursor()
+    //new Cursor()
 imageGalleryH()
 imageGalleryV()
     //new Slider('.slide', '#arrow-left', '#arrow-right')

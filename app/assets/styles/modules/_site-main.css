@@ -23,7 +23,7 @@
             height: 100%;
             left: -50%;
             opacity: 0;
-            transition: all 4s ease;
+            transition: all 3s ease;
         }
         display: flex;
         align-items: center;
@@ -59,7 +59,7 @@
             height: 100%;
             right: -50%;
             opacity: 0;
-            transition: all 3s ease;
+            transition: all 2s ease;
         }
         background: url('./assets/images/scene1-main.jpg') center no-repeat;
         background-size: contain;
@@ -80,7 +80,7 @@
             height: 100%;
             right: -50%;
             opacity: 0;
-            transition: all 4s ease;
+            transition: all 3s ease;
         }
         display: flex;
         align-items: center;
@@ -113,7 +113,7 @@
             height: 100%;
             left: -50%;
             opacity: 0;
-            transition: all 3s ease;
+            transition: all 2s ease;
         }
         background: url('./assets/images/scene2-main.jpg') center no-repeat;
         background-size: contain;
@@ -155,7 +155,7 @@
             @mixin atSmall {
                 font-size: 2.5rem;
                 opacity: 0;
-                transition: all 4s ease;
+                transition: all 3s ease;
             }
             @mixin atMedium {
                 font-size: 3rem;
@@ -172,7 +172,7 @@
                 letter-spacing: 1px;
                 font-size: 2rem;
                 opacity: 0;
-                transition: all 4s ease 1s;
+                transition: all 2s ease 1s;
             }
             @mixin atMedium {
                 letter-spacing: 2px;

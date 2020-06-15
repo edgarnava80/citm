@@ -1,5 +1,7 @@
 .site-gallery {
     height: 200vh;
+    background: url('./assets/images/gallery-main.jpg') top center no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
