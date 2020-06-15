@@ -60,34 +60,33 @@
         bottom: .2rem;
         left: 0;
         color: $color-white;
-        font-size: .8rem;
+        font-size: .7rem;
         letter-spacing: .1rem;
         text-transform: uppercase;
-        transform: scale(.7) translateX(-5rem);
         @mixin atSmall {
-            bottom: .3rem;
+            width: 55%;
             left: 1rem;
-            width: 45%;
-            transform: scale(.8);
+            bottom: .3rem;
         }
         @mixin atMedium {
             bottom: .5rem;
             left: 2rem;
             width: 35%;
-            transform: scale(1);
+            //transform: scale(1);
         }
     }
     &__logo {
         z-index: 10;
         position: fixed;
         width: 1.8rem;
-        bottom: 1rem;
+        bottom: 1%;
         right: 1rem;
         @mixin atSmall {
-            width: 2.4rem;
+            width: 2rem;
         }
         @mixin atMedium {
-            width: 3rem;
+            width: 2.5rem;
+            bottom: 0;
         }
     }
 }

@@ -1,43 +1,48 @@
 .site-contact {
     height: 100vh;
     display: grid;
-    grid-template: 94% 6% / 100%;
+    grid-template: 93% 7% / 100%;
     &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        //justify-content: center;
+        display: grid;
+        grid-template: 60% 40% / 100%;
         &__img {
-            position: relative;
-            width: 90%;
-            height: 50%;
-            img {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-40%);
-            }
-            @mixin atSmall {
-                width: 25%;
-                height: 55%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: end;
+            text-align: center;
+            padding-bottom: 1rem;
+            &--image {
+                width: 30rem;
             }
         }
         &__info {
-            width: 90%;
-            height: 45%;
+            width: 100%;
+            //height: 45%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 2rem;
             @mixin atSmall {
-                width: 90%;
-                height: 45%;
+                //width: 90%;
+                //height: 45%;
                 font-size: 2rem;
             }
             @mixin atMedium {
-                width: 40%;
-                height: 45%;
+                //width: 40%;
+                //height: 45%;
+                font-size: 2rem;
+            }
+            @mixin atLarge {
+                //width: 40%;
+                //height: 45%;
+                font-size: 2.5rem;
+            }
+            @mixin atLarger {
+                //width: 40%;
+                //height: 45%;
                 font-size: 2.5rem;
             }
         }
@@ -50,12 +55,9 @@
         letter-spacing: .1rem;
         text-transform: uppercase;
         @mixin atSmall {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
-        @mixin atMedium {
-            font-size: 1.4rem;
-        }
-        p {
+        & p {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);

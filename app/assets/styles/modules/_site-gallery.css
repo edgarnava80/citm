@@ -1,49 +1,88 @@
 .site-gallery {
-    height: 100vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @mixin atSmall {
-        height: 105vh;
+        height: 210vh;
+    }
+    &__horizontal {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__vertical {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @mixin atSmall {
+            height: 110vh;
+        }
     }
 }
 
 .image-gallery {
+    position: relative;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 40%;
+    //padding-bottom: calc(55%*10/14);
+    @mixin atSmall {
+        width: 55%;
+        padding-bottom: calc(55%*10/14);
+    }
+    @mixin atLarger {
+        width: 45%;
+        padding-bottom: calc(45%*10/14);
+    }
 }
 
 .gallery-highlight {
+    position: absolute;
+    top: 0;
     width: 100%;
-    height: 35%;
+    height: 70%;
     @mixin atSmall {
-        width: 70%;
+        top: 0;
         height: 70%;
     }
 }
 
 .image-preview {
+    position: absolute;
     display: flex;
     width: 100%;
-    border: 2px solid $color-grey-light;
+    height: 30%;
+    top: 70%;
+    justify-content: center;
     @mixin atSmall {
-        width: 70%;
+        top: 70%;
+        height: 30%;
     }
 }
 
 .image-preview img {
-    height: 70px;
+    height: 4rem;
+    border: 2px solid $color-grey-light;
     flex-grow: 1;
     opacity: 0.5;
     cursor: pointer;
     transition: opacity 0.4s ease;
     @mixin atSmall {
-        height: 100px;
+        max-width: 22.5rem;
+        height: 5rem;
+    }
+    @mixin atMedium {
+        height: 8rem;
+    }
+    @mixin atLarge {
+        height: 10rem;
     }
 }
 
@@ -51,67 +90,75 @@ img.image-active {
     opacity: 1;
 }
 
+.vertical-gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    //padding-right: calc(55%*10/14);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @mixin atSmall {
+        width: 70%;
+        height: 80%;
+    }
+    @mixin atMedium {
+        width: 60%;
+        height: 82%;
+    }
+    @mixin atLarge {
+        width: 50%;
+        height: 86%;
+    }
+    @mixin atLarger {
+        width: 40%;
+        height: 90%;
+    }
+}
 
-/*&__video {
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100vh;
-        z-index: -1;
+.vertical-highlight {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    max-width: 70%;
+    height: 80%;
+    @mixin atSmall {
+        top: 0;
+        left: 30%;
+        max-width: 60rem;
+        height: 100%;
     }
-    &__p1 {
-        height: 100vh;
-        position: relative;
-        &--img1 {
-            position: absolute;
-            width: 100%;
-            height: 40%;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            @mixin atSmall {
-                width: 70%;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-            }
-        }
+}
+
+.vertical-preview {
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    @mixin atSmall {
+        left: 0;
+        width: 30%;
+        height: 100%;
     }
-    &__p2 {
-        height: 100vh;
-        position: relative;
-        &--img5 {
-            position: absolute;
-            width: 100%;
-            height: 40%;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            @mixin atSmall {
-                width: 70%;
-                top: 50%;
-                left: 15%;
-                transform: translateY(-50%);
-            }
-        }
+}
+
+.vertical-preview img {
+    height: 33.3%;
+    margin: 0 0 0 auto;
+    display: block;
+    border: 2px solid $color-grey-light;
+    //flex-grow: 1;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+    @mixin atSmall {
+        height: 33.3%;
+        margin: 0 0 0 auto;
     }
-    &__p3 {
-        height: 100vh;
-        position: relative;
-        &--img6 {
-            position: absolute;
-            width: 100%;
-            height: 40%;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            @mixin atSmall {
-                width: 70%;
-                top: 50%;
-                left: 30%;
-                transform: translateY(-50%);
-            }
-        }
-    }*/
+}
+
+img.vertical-active {
+    opacity: 1;
+}
