@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Reem+Kufi&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/logo2.ico" type="image/x-icon">
-    <title>Coffee in the morning</title>
+    <title data-key="page-title">Coffee in the morning</title>
     <meta name="keywords" content="film, movie, narrative short, coffee in the morning, café por la mañana">
     <meta name="description" content="A young woman stays in a Doctor’s cabin in the middle of the woods,
     recovering from her wounds. With extra help from someone unexpected,
@@ -122,7 +122,6 @@
     <div class="loader-wrapper">
         <div class="box">
             <div class="ryt"></div>
-            <div class="loader8"></div>
             <div class="loader3"></div>
         </div>
     </div>
@@ -138,15 +137,18 @@
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#home" id="home-link" class="navigation__link">Home</a></li>
-                    <li class="navigation__item"><a href="#film" id="film-link" class="navigation__link">Film</a></li>
-                    <li class="navigation__item"><a href="#cast" id="cast-link" class="navigation__link">Cast</a></li>
-                    <li class="navigation__item"><a href="#director" id="director-link" class="navigation__link">Director</a></li>
-                    <li class="navigation__item"><a href="#credits" id="credits-link" class="navigation__link">Credits</a></li>
-                    <li class="navigation__item"><a href="#gallery" id="gallery-link" class="navigation__link">Gallery</a></li>
-                    <li class="navigation__item"><a href="#contact" id="contact-link" class="navigation__link">Contact</a></li>
+                    <li class="navigation__item"><a href="#home" id="home-link" class="navigation__link" data-key="menu-home">Home</a></li>
+                    <li class="navigation__item"><a href="#film" id="film-link" class="navigation__link" data-key="menu-film">Film</a></li>
+                    <li class="navigation__item"><a href="#cast" id="cast-link" class="navigation__link" data-key="menu-cast">Cast</a></li>
+                    <li class="navigation__item"><a href="#director" id="director-link" class="navigation__link" data-key="menu-director">Director</a></li>
+                    <li class="navigation__item"><a href="#credits" id="credits-link" class="navigation__link" data-key="menu-credits">Credits</a></li>
+                    <li class="navigation__item"><a href="#gallery" id="gallery-link" class="navigation__link" data-key="menu-gallery">Gallery</a></li>
+                    <li class="navigation__item"><a href="#contact" id="contact-link" class="navigation__link" data-key="menu-contact">Contact</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="language">
+            <a class="language__link" href="../cafe-por-la-manana/index.html" data-key="link-language">ESP</a>
         </div>
         <div class="sound cursor-effect">
             <i class="sound__icon fas fa-volume-up"></i>
@@ -155,18 +157,18 @@
         <div class="share cursor-effect">
             <i class="share__icon fas fa-share-alt"></i>
             <div class="share__list">
-                <a class="share__item share__item--facebook" href="https://www.facebook.com/sharer.php?u=http://rojoytostado.com/coffeeinthemorning"><i class="fab fa-facebook-square"></i></a>
-                <a class="share__item share__item--twitter" href="https://www.twitter.com/intent/tweet?text=http://rojoytostado.com/coffeeinthemorning"><i class="fab fa-twitter-square"></i></a>
-                <a class="share__item share__item--instagram" href="https://www.instagram.com/sharer.php?u=http://rojoytostado.com/coffeeinthemorning"><i class="fab fa-instagram-square"></i></a>
+                <a class="share__item share__item--facebook" href="https://www.facebook.com/sharer.php?u=http://rojoytostado.com/coffee-in-the-morning/index.html"><i class="fab fa-facebook-square"></i></a>
+                <a class="share__item share__item--twitter" href="https://www.twitter.com/intent/tweet?text=http://rojoytostado.com/coffee-in-the-morning/index.html"><i class="fab fa-twitter-square"></i></a>
+                <a class="share__item share__item--instagram" href="https://www.instagram.com/sharer.php?u=http://rojoytostado.com/coffee-in-the-morning/index.html"><i class="fab fa-instagram-square"></i></a>
                 <a class="share__item share__item--linkedin" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
-                <a class="share__item share__item--whatsapp" href="whatsapp://send?text=http://rojoytostado.com/coffeeinthemorning"><i class="fab fa-whatsapp-square"></i></a>
+                <a class="share__item share__item--whatsapp" href="whatsapp://send?text=http://rojoytostado.com/coffee-in-the-morning/index.html"><i class="fab fa-whatsapp-square"></i></a>
             </div>
         </div>
         <div class="site-home__title">
-            <h1 data-key="home-tilte">coffee in the morning</h1>
+            <h1 data-key="home-title">coffee in the morning</h1>
         </div>
         <div class="site-home__subtitle">
-            <h3 data-key="home-subtilte">A film by <strong>Rogelio Rodríguez</strong></h3>
+            <h3 data-key="home-subtitle">A film by <strong>Rogelio Rodríguez</strong></h3>
         </div>
         <div class="site-home__arrow-btn buttons__arrow-down-w">
             <ul>
@@ -183,7 +185,7 @@
     <main class="site-main page-section" id="film" matching-link="#film-link">
         <div class="site-main__white">
             <div class="site-main__title-1">
-                <h1 class="site-main__title-1__text">Dreams and new beginnings...</h1>
+                <h1 class="site-main__title-1__text" data-key="scene-one">Dreams and new beginnings...</h1>
             </div>
             <div class="site-main__scene-1">
                 <!--<img class="site-main__image--rigth " src="/assets/images/scene-1.jpeg " alt="Film scene photo. ">-->
@@ -194,36 +196,36 @@
                 <!--<img class="site-main__image--rigth " src="/assets/images/scene-1.jpeg " alt="Film scene photo. ">-->
             </div>
             <div class="site-main__title-2">
-                <h1 class="site-main__title-2__text">... and yet, a distant future.</h1>
+                <h1 class="site-main__title-2__text" data-key="scene-two">... and yet, a distant future.</h1>
             </div>
         </div>
         <div class="site-main__synopsis">
             <div class="site-main__synopsis__paragraph">
-                <h3 class="site-main__synopsis__title"><strong>synopsis</strong></h3>
-                <p class="site-main__synopsis__text">A young woman stays in a Doctor’s cabin in the middle of the woods, recovering from her wounds. With extra help from someone unexpected, she starts getting ready to finally go back to her hometown. This might not be yet as safe and easy
+                <h3 class="site-main__synopsis__title"><strong data-key="synopsis">synopsis</strong></h3>
+                <p class="site-main__synopsis__text" data-key="synopsis-text">A young woman stays in a Doctor’s cabin in the middle of the woods, recovering from her wounds. With extra help from someone unexpected, she starts getting ready to finally go back to her hometown. This might not be yet as safe and easy
                     as she might think.</p>
             </div>
         </div>
         <div class="site-main__film">
             <div class="site-main__film__container">
                 <div class="site-main__film__title">
-                    <h3 class="site-main__film__title--text"><strong>technical details</strong></h3>
+                    <h3 class="site-main__film__title--text"><strong data-key="technical-details">technical details</strong></h3>
                 </div>
                 <div class="site-main__film__box">
                     <div class="site-main__film__box-1">
-                        <h3 class="site-main__film__text">Original Title:</h3><br>
-                        <h3 class="site-main__film__text">Language:</h3><br>
-                        <h3 class="site-main__film__text">Subtitles:</h3><br>
-                        <h3 class="site-main__film__text">Type of production:</h3><br>
-                        <h3 class="site-main__film__text">Aspect Ratio:</h3><br>
-                        <h3 class="site-main__film__text">Duration:</h3><br>
-                        <h3 class="site-main__film__text">Release Year:</h3>
+                        <h3 class="site-main__film__text" data-key="td1">Original Title:</h3><br>
+                        <h3 class="site-main__film__text" data-key="td2">Language:</h3><br>
+                        <h3 class="site-main__film__text" data-key="td3">Subtitles:</h3><br>
+                        <h3 class="site-main__film__text" data-key="td4">Type of production:</h3><br>
+                        <h3 class="site-main__film__text" data-key="td5">Aspect Ratio:</h3><br>
+                        <h3 class="site-main__film__text" data-key="td6">Duration:</h3><br>
+                        <h3 class="site-main__film__text" data-key="td7">Release Year:</h3>
                     </div>
                     <div class="site-main__film__box-2">
-                        <h3 class="site-main__film__text">Café por la mañana</h3><br>
-                        <h3 class="site-main__film__text">Spanish</h3><br>
-                        <h3 class="site-main__film__text">English</h3><br>
-                        <h3 class="site-main__film__text">Narrative Short</h3><br>
+                        <h3 class="site-main__film__text" data-key="td8">Coffee in the morning</h3><br>
+                        <h3 class="site-main__film__text" data-key="td9">Spanish</h3><br>
+                        <h3 class="site-main__film__text" data-key="td10">English</h3><br>
+                        <h3 class="site-main__film__text" data-key="td11">Narrative Short</h3><br>
                         <h3 class="site-main__film__text">2.39</h3><br>
                         <h3 class="site-main__film__text">29 min</h3><br>
                         <h3 class="site-main__film__text">2019</h3>
@@ -245,7 +247,7 @@
             </div>
             <div class="site-cast--melanie__story">
                 <h3 class="site-cast__title"><strong> Melanie Borguez</strong></h3>
-                <p class="site-cast__text">Actress and singer graduated from the Bachelor's Degree in Dramatic Literature and Theater, UNAM.</br>
+                <p class="site-cast__text" data-key="melanie">Actress and singer graduated from the Bachelor's Degree in Dramatic Literature and Theater, UNAM.</br>
                     Among the montages in which she has participated are "HURT ", by Roberto Espinosa, presented at the Edinburgh Festival Fringe 2012, as well as at the 9th Festival of Monologues Theatre to a Solo Voice 2013, and in different cities of Austria in 2015;
                     1.12, directed by David Psalmon and Jorge Maldonado, with the collective Teatro Sin Paredes; Malintzin by Luis Santillán; Jam every third day, written and directed by Ana María Aparicio; How tall are the buildings in NY?, directed
                     by Diego Alvarez Robledo; Who among us?, directed by Gustavo Beltrán, with Nuna Teatro Contemporáneo; Bicho Rock, directed by Emmanuel Marquez Peralta, with Figurat Teatro.</br> She has also participated in different
@@ -259,19 +261,19 @@
             </div>
             <div class="site-cast--mario__story--left">
                 <h3 class="site-cast__title"><strong>Mario Heras</strong></h3>
-                <p class="site-cast__text">Originally from the city of Pachuca Hidalgo. Degree in Communication Science from ITESM. Since 1996 he has performed as an Actor, Singer and Announcer. <br><br>In musical theater, he has participated in the kids projects “Qates”, The Wizard
+                <p class="site-cast__text" data-key="mario">Originally from the city of Pachuca Hidalgo. Degree in Communication Science from ITESM. Since 1996 he has performed as an Actor, Singer and Announcer. <br><br>In musical theater, he has participated in the kids projects “Qates”, The Wizard
                     of Oz, Antarctic Emperors, The Rocky Horror Show, and the second staging in Mexico of the Tony award winner, Avenue Q. His last work in musical theatre was in the staging of Man of La Mancha where he played the character of Anselmo.
                     <br> <br>In theater stand out his participations in Father is in Atlantis, Cheerful Bride for me Sad and Dead, North and Ana's Things.</p>
             </div>
             <div class="site-cast--mario__story--right">
-                <p class="site-cast__text">In dubbing he has recorded openings for series such as Dragon Ball Z Kai and Babar and the adventures of Badou and characters for shows including Raggs, Covert Affairs, “Yo Gabba Gabba”, Horrible Stories, Littlest Pet Shop and “Superinsectos”.
+                <p class="site-cast__text" data-key="mario2">In dubbing he has recorded openings for series such as Dragon Ball Z Kai and Babar and the adventures of Badou and characters for shows including Raggs, Covert Affairs, “Yo Gabba Gabba”, Horrible Stories, Littlest Pet Shop and “Superinsectos”.
                     <br> <br> In addition to developing in the field of acting, Mario has also produced various projects for institutions such as UNAM and INBA. Founder and Director of Resorte Theatre company dedicated to the creation of shows since 2008.</p>
             </div>
         </div>
         <div class="site-cast--rouse">
             <div class="site-cast--rouse__story">
                 <h3 class="site-cast__title"><strong>Rouse Calderón</strong></h3>
-                <p class="site-cast__text">Mexican actress graduated from the Andrés Soler Institute.</br> She participated in plays such as By the way ... Don't Want to Toast?, Unfaithfully Tragicomedia, and in the seasons of Microteatro Mexico of “Por los huevos” and “La Nave”.</br>
+                <p class="site-cast__text" data-key="rouse">Mexican actress graduated from the Andrés Soler Institute.</br> She participated in plays such as By the way ... Don't Want to Toast?, Unfaithfully Tragicomedia, and in the seasons of Microteatro Mexico of “Por los huevos” and “La Nave”.</br>
                     She has collaborated on short films such as The Working Dead, The Queen and the Dead, The Menstade and now Coffee in the morning.</br> In children's theater she has participated with the company Captain Canutillo and his “Cachivaches”
                     being part of the cast of The Extraordinary History of the Witch who wanted to be Princess and The Person Who Had the Power to Change the World.</br> She currently collaborates in the theater company First Call, participating in the
                     plays Successful But Alone, Until Tomorrow My Love, Let’s Tell the Truth, You Also Told Me I Love you, This Night We Say Goodbye and Need to Finish.</p>
@@ -289,7 +291,7 @@
             <div class="site-credits__director__story">
                 <h2 class="site-credits__director__title"><strong>Director</strong></h2>
                 <h3 class="site-credits__director__subtitle"> <strong> Rogelio Rodríguez</strong></h3>
-                <p class="site-credits__director__text">(Mexico City, Mexico, 1980). Rogelio Rodriguez, also known by his friends as "Roger ", is a CG artist and filmmaker who grew up always interested in films and their stories.</br> He studied Communication Science at the ITESM in Mexico
+                <p class="site-credits__director__text" data-key="director">(Mexico City, Mexico, 1980). Rogelio Rodriguez, also known by his friends as "Roger ", is a CG artist and filmmaker who grew up always interested in films and their stories.</br> He studied Communication Science at the ITESM in Mexico
                     City and after graduating, he started working as copywriter at Z Publicidad for clients like Bacardi, Volkswagen, to name a couple. He transitions to working on set, shooting commercials as 2nd A.D. for brands like Volkswagen, DHL,
                     Ford, Nestle, among others.</br> After some years, he takes a postgraduate degree in animation at Sheridan College and transitions to VFX and animation. He then works in the layout department in projects such as: Gnomeo & Juliet, EXODUS:
                     Gods and Kings, The Jungle Book, Pirates of the Caribbean 5 and the VR preproduction teamfor The Lion King.</br> He is currently Head of the Layout department at the VFX studio DNEG in Vancouver, working on projects like Hobbs & Shaw,

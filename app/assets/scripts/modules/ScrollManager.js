@@ -91,6 +91,20 @@ class ScrollManager {
             mainSubtitleP4.classList.remove('fadeIn')
         }
     }
+        // Method to trigger the actions on page 5
+        actionsP5() {
+            const mainTitleP2 = document.querySelector('.site-main__title-1')
+            const mainImageP2 = document.querySelector('.site-main__scene-1')
+
+            if (this.getCurrentTop() > .9 || this.getCurrentTop() < 1) {
+                mainImageP2.classList.add('rightLeft')
+                mainTitleP2.classList.add('leftRight')
+            }
+            if (this.getCurrentTop() > 2 || this.getCurrentTop() < .2) {
+                mainImageP2.classList.remove('rightLeft')
+                mainTitleP2.classList.remove('leftRight')
+            }
+        }
     blinkArrow() {
         const arrowDown = document.querySelector('.site-home__arrow-btn')
         arrowDown.classList.toggle('blinkArrows')
