@@ -5,10 +5,12 @@ import Multilingual from './modules/Multilingual'
 import Menu from './modules/Menu'
 import Sound from './modules/Sound'
 import Cursor from './modules/Cursor'
+import Cast from './modules/Cast'
 import ImageGallery from './modules/ImageGallery'
 
 const scroll = new ScrollManager()
 
+new Cast()
 new Multilingual()
 new Menu()
 new Sound()

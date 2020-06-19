@@ -106,10 +106,10 @@ class Multilingual {
         })
         let linkLanguage = document.querySelector('.language__link')
         if (this.browserLang === 'es') {
-            linkLanguage.setAttribute('href', '../coffee-in-the-morning/index.html')
+            linkLanguage.setAttribute('href', 'http://www.rojoytostado.com/coffee-in-the-morning/index.html')
                 //console.log('link: ' + linkLanguage.getAttribute('href'))
         } else {
-            linkLanguage.setAttribute('href', '../cafe-por-la-manana/index.html')
+            linkLanguage.setAttribute('href', 'http://www.rojoytostado.com/cafe-por-la-manana/index.html')
         }
 
 
