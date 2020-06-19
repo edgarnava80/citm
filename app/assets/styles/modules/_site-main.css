@@ -201,7 +201,7 @@
         display: grid;
         grid-template: 50% 50% / 100%;
         @mixin atSmall {
-            grid-template: 100% / 60% 40%;
+            grid-template: 100% / 65% 35%;
         }
         &__container {
             display: grid;
@@ -232,7 +232,6 @@
         &__box {
             display: grid;
             grid-template: 100% / 50% 50%;
-            @mixin atSmall {}
         }
         &__making-1 {
             position: absolute;
