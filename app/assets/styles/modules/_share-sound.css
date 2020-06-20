@@ -110,6 +110,12 @@
         }
         &--whatsapp {
             color: #25D366;
+            pointer-events: all;
+            @mixin atSmall {
+                //color: red;
+                visibility: hidden;
+                pointer-events: none;
+            }
         }
     }
     &__list a:hover {

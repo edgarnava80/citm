@@ -9,7 +9,7 @@
         background: url('./assets/images/back-main.jpg') center no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        filter: saturate(0.9) contrast(.7) brightness(.7) grayscale(20%);
+        //filter: saturate(0.9) contrast(.7) brightness(.7) grayscale(20%);
     }
     &__title {
         width: 100%;
