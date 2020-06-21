@@ -18,6 +18,20 @@ class ScrollManager {
             this.browserHeight = window.innerHeight
             this.browserWidth = window.innerWidth
         }, 333))
+        const container = document.querySelector('.site-home__video')
+        const audioFile = document.querySelector('.sound__audio')
+        const audioIcon = document.querySelector('.sound__icon')
+        container.onmouseenter = () => {
+            console.log('mouse enter')
+            container.style.width = '85%'
+            audioFile.muted = true
+            audioIcon.classList.remove('fa-volume-up')
+            audioIcon.classList.add('fa-volume-off')
+        }
+        if (this.getCurrentTop() > 1) {
+            console.log('next page')
+            container.style.width = '30%'
+        }
     }
 
     getCurrentTop() {
@@ -27,6 +41,11 @@ class ScrollManager {
     runOnScroll() {
         this.defineScrollDirection()
             //Methods to execute on scroll defined for each particular website
+        if (this.getCurrentTop() > .3) {
+            const container = document.querySelector('.site-home__video')
+            console.log('next page')
+            container.style.width = '30%'
+        }
         if (this.getCurrentTop() < 1) this.actionsP1()
         this.actionsP2()
         this.actionsP3()
@@ -46,6 +65,7 @@ class ScrollManager {
     actionsP1() {
             const mainTitleP1 = document.querySelector('.site-home__title')
             const mainSubtitleP1 = document.querySelector('.site-home__subtitle')
+
             mainTitleP1.style.opacity = (1 - this.scrolledVertically / 1000 * 1.5).toFixed(2)
             mainSubtitleP1.style.opacity = (1 - this.scrolledVertically / 1000 * 1.7).toFixed(2)
             mainSubtitleP1.style.transform = 'translate(0px,' + this.scrolledVertically / 2.5 + 'px)'
@@ -79,32 +99,32 @@ class ScrollManager {
         }
     }
     actionsP4() {
-        console.log('CurrentTop: ' + this.getCurrentTop())
-        const mainTitleP4 = document.querySelector('.site-main__synopsis__title')
-        const mainSubtitleP4 = document.querySelector('.site-main__synopsis__text')
-        if (this.getCurrentTop() > 3) {
-            mainTitleP4.classList.add('fadeIn')
-            mainSubtitleP4.classList.add('fadeIn')
+            console.log('CurrentTop: ' + this.getCurrentTop())
+            const mainTitleP4 = document.querySelector('.site-main__synopsis__title')
+            const mainSubtitleP4 = document.querySelector('.site-main__synopsis__text')
+            if (this.getCurrentTop() > 3) {
+                mainTitleP4.classList.add('fadeIn')
+                mainSubtitleP4.classList.add('fadeIn')
+            }
+            if (this.getCurrentTop() < 2) {
+                mainTitleP4.classList.remove('fadeIn')
+                mainSubtitleP4.classList.remove('fadeIn')
+            }
         }
-        if (this.getCurrentTop() < 2) {
-            mainTitleP4.classList.remove('fadeIn')
-            mainSubtitleP4.classList.remove('fadeIn')
+        // Method to trigger the actions on page 5
+    actionsP5() {
+        const mainTitleP2 = document.querySelector('.site-main__title-1')
+        const mainImageP2 = document.querySelector('.site-main__scene-1')
+
+        if (this.getCurrentTop() > .9 || this.getCurrentTop() < 1) {
+            mainImageP2.classList.add('rightLeft')
+            mainTitleP2.classList.add('leftRight')
+        }
+        if (this.getCurrentTop() > 2 || this.getCurrentTop() < .2) {
+            mainImageP2.classList.remove('rightLeft')
+            mainTitleP2.classList.remove('leftRight')
         }
     }
-        // Method to trigger the actions on page 5
-        actionsP5() {
-            const mainTitleP2 = document.querySelector('.site-main__title-1')
-            const mainImageP2 = document.querySelector('.site-main__scene-1')
-
-            if (this.getCurrentTop() > .9 || this.getCurrentTop() < 1) {
-                mainImageP2.classList.add('rightLeft')
-                mainTitleP2.classList.add('leftRight')
-            }
-            if (this.getCurrentTop() > 2 || this.getCurrentTop() < .2) {
-                mainImageP2.classList.remove('rightLeft')
-                mainTitleP2.classList.remove('leftRight')
-            }
-        }
     blinkArrow() {
         const arrowDown = document.querySelector('.site-home__arrow-btn')
         arrowDown.classList.toggle('blinkArrows')

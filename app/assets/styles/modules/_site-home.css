@@ -15,10 +15,7 @@
         margin: auto auto;
         width: 80%;
         @mixin atSmall {
-            width: 45%;
-        }
-        @mixin atMedium {
-            width: 35%;
+            width: 30%;
         }
     }
     &__video-wrapper {
@@ -48,6 +45,7 @@
         bottom: 0;
         height: 100%;
         width: 100%;
+        z-index: 24;
     }
     &__title {
         width: 100%;
