@@ -11,6 +11,44 @@
         background-attachment: fixed;
         //filter: saturate(0.9) contrast(.7) brightness(.7) grayscale(20%);
     }
+    &__video {
+        margin: auto auto;
+        width: 80%;
+        @mixin atSmall {
+            width: 45%;
+        }
+        @mixin atMedium {
+            width: 35%;
+        }
+    }
+    &__video-wrapper {
+        position: relative;
+        top: 2%;
+        padding-bottom: 56.25%;
+        padding-top: 15rem;
+        height: 0px;
+        @mixin atSmall {
+            padding-top: 15rem;
+        }
+        @mixin atMedium {
+            padding-top: 10rem;
+        }
+        @mixin atLarge {
+            padding-top: 5rem;
+        }
+        @mixin atLarger {
+            padding-top: 2rem;
+        }
+    }
+    &__video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+    }
     &__title {
         width: 100%;
         text-align: center;
