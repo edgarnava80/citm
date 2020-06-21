@@ -14,6 +14,7 @@
     &__video {
         margin: auto auto;
         width: 80%;
+        transition: all 1s ease;
         @mixin atSmall {
             width: 30%;
         }
@@ -124,5 +125,17 @@
             width: 2.5rem;
             bottom: 0;
         }
+    }
+}
+
+.resize-small {
+    @mixin atSmall {
+        width: 30%;
+    }
+}
+
+.resize-big {
+    @mixin atSmall {
+        width: 75%;
     }
 }

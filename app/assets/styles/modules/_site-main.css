@@ -274,6 +274,9 @@
             font-size: 2rem;
             letter-spacing: .2rem;
             font-weight: lighter;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.5s ease-in-out;
             @mixin atSmall {
                 font-size: 2rem;
             }
@@ -299,4 +302,9 @@
 
 .fadeIn {
     opacity: 1;
+}
+
+.is-showing {
+    opacity: 1;
+    transform: translateX(0px);
 }

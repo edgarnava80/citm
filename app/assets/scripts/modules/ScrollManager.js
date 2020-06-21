@@ -18,20 +18,7 @@ class ScrollManager {
             this.browserHeight = window.innerHeight
             this.browserWidth = window.innerWidth
         }, 333))
-        const container = document.querySelector('.site-home__video')
-        const audioFile = document.querySelector('.sound__audio')
-        const audioIcon = document.querySelector('.sound__icon')
-        container.onmouseenter = () => {
-            console.log('mouse enter')
-            container.style.width = '85%'
-            audioFile.muted = true
-            audioIcon.classList.remove('fa-volume-up')
-            audioIcon.classList.add('fa-volume-off')
-        }
-        if (this.getCurrentTop() > 1) {
-            console.log('next page')
-            container.style.width = '30%'
-        }
+        this.videoEvents()
     }
 
     getCurrentTop() {
@@ -41,15 +28,11 @@ class ScrollManager {
     runOnScroll() {
         this.defineScrollDirection()
             //Methods to execute on scroll defined for each particular website
-        if (this.getCurrentTop() > .3) {
-            const container = document.querySelector('.site-home__video')
-            console.log('next page')
-            container.style.width = '30%'
-        }
         if (this.getCurrentTop() < 1) this.actionsP1()
         this.actionsP2()
         this.actionsP3()
         this.actionsP4()
+        if (this.scrollDirection === 'down' && this.getCurrentTop() > 4.2 && this.getCurrentTop() < 5.3 || this.scrollDirection === 'up' && this.getCurrentTop() > 3 && this.getCurrentTop() < 5.5) this.actionsP5()
     }
 
     defineScrollDirection() {
@@ -62,6 +45,24 @@ class ScrollManager {
         }
         //METHODS DEFINED FOR EACH PARTICULAR WEBSITE
         // Method to trigger the actions on page 1
+    videoEvents() {
+        const container = document.querySelector('.site-home__video')
+        const audioFile = document.querySelector('.sound__audio')
+        const audioIcon = document.querySelector('.sound__icon')
+        container.onmouseenter = () => {
+            console.log('mouse enter')
+                //container.style.width = '85%'
+            container.classList.remove('resize-small')
+            container.classList.add('resize-big')
+            audioFile.muted = true
+            audioIcon.classList.remove('fa-volume-up')
+            audioIcon.classList.add('fa-volume-off')
+        }
+        container.onmouseleave = () => {
+            container.classList.remove('resize-big')
+            container.classList.add('resize-small')
+        }
+    }
     actionsP1() {
             const mainTitleP1 = document.querySelector('.site-home__title')
             const mainSubtitleP1 = document.querySelector('.site-home__subtitle')
@@ -99,7 +100,7 @@ class ScrollManager {
         }
     }
     actionsP4() {
-            console.log('CurrentTop: ' + this.getCurrentTop())
+            //console.log('CurrentTop: ' + this.getCurrentTop())
             const mainTitleP4 = document.querySelector('.site-main__synopsis__title')
             const mainSubtitleP4 = document.querySelector('.site-main__synopsis__text')
             if (this.getCurrentTop() > 3) {
@@ -113,16 +114,20 @@ class ScrollManager {
         }
         // Method to trigger the actions on page 5
     actionsP5() {
-        const mainTitleP2 = document.querySelector('.site-main__title-1')
-        const mainImageP2 = document.querySelector('.site-main__scene-1')
-
-        if (this.getCurrentTop() > .9 || this.getCurrentTop() < 1) {
-            mainImageP2.classList.add('rightLeft')
-            mainTitleP2.classList.add('leftRight')
+        const details = document.querySelectorAll('.site-main__film__text')
+        const validator = document.querySelectorAll('.is-showing')
+        if (this.scrollDirection === 'down' && this.getCurrentTop() == 4.25 || this.scrollDirection === 'up' && this.getCurrentTop() == 4.50) {
+            console.log(validator.length + ' scroll dir: ' + this.scrollDirection)
+            for (let i = 0; i < details.length; i++) {
+                setTimeout(() => {
+                    details[i].classList.add('is-showing')
+                }, 100 * (i + 1))
+            }
         }
-        if (this.getCurrentTop() > 2 || this.getCurrentTop() < .2) {
-            mainImageP2.classList.remove('rightLeft')
-            mainTitleP2.classList.remove('leftRight')
+        if (this.scrollDirection === 'down' && this.getCurrentTop() == 5.20 || this.scrollDirection === 'up' && this.getCurrentTop() == 3.50) {
+            details.forEach(el => {
+                el.classList.remove('is-showing')
+            })
         }
     }
     blinkArrow() {
