@@ -1,5 +1,8 @@
 .site-contact {
-    height: 100vh;
+    height: 110vh;
+    @mixin atSmall {
+        height: 100vh;
+    }
     display: grid;
     grid-template: 93% 7% / 100%;
     &__content {

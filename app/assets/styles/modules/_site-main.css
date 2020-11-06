@@ -214,7 +214,7 @@
             justify-content: center;
             &--text {
                 text-transform: uppercase;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: lighter;
                 color: $color-white;
                 @mixin atSmall {
@@ -271,7 +271,7 @@
             padding-left: 2rem;
         }
         &__text {
-            font-size: 2rem;
+            font-size: 1.5rem;
             letter-spacing: .2rem;
             font-weight: lighter;
             opacity: 0;

@@ -1,7 +1,10 @@
 .site-credits {
     &__director {
-        height: 110vh;
+        height: 150vh;
         position: relative;
+        @mixin atSmall {
+            height: 110vh;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -56,7 +59,7 @@
             text-align: center;
             color: $color-white;
             text-transform: uppercase;
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             font-weight: lighter;
             padding-bottom: .5rem;
             @mixin atSmall {
@@ -78,7 +81,7 @@
         }
         &__subtitle {
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: $color-white;
             font-weight: lighter;
             padding-bottom: 1rem;
@@ -101,8 +104,11 @@
         }
         &__text {
             text-align: justify;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: $color-white;
+            @mixin atSmallest {
+                font-size: 1.5rem;
+            }
             @mixin atSmall {
                 //font-size: 2rem;
                 line-height: 1.2;
